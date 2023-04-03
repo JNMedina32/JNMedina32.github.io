@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(67, 64, 64);
+    background-color: rgb(95, 91, 91);
     color: rgb(255, 255, 255);
     height: 100%;
     width: 100%;
@@ -19,13 +19,15 @@ h1 {
 }
 p {
     font-size: 25px;
+    text-align: center;
 }
 h2 {
     font-size: 30px;
 }
 #img-container {
-    width: fit-content;
+    width: 95%;
     height: fit-content;
+    display: flex;
 }
 #welcome {
     text-align: center;
@@ -40,8 +42,8 @@ h2 {
 }
 .dropdown {
     position: relative;
-    display: flex;
-    margin: 0% 40%;
+    display: block;
+    margin: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -86,7 +88,6 @@ h2 {
     color: black;
 }
 #earlyLife {
-    text-align: center;
     display: none;
 }
 #workHistory {
@@ -104,7 +105,7 @@ h2 {
 #projects {
     display: none;
 }
-li {
+ul {
     font-size: 20px;
     border: 1px, solid, #ccc;
 }
@@ -122,9 +123,10 @@ li {
     display: inline-block;
 }
 footer {
-    color: rgb(39, 120, 56);
+    color: rgb(48, 216, 84);
     font-size: 25px;
     width: 100%;
     text-align: center;
-    
+    position: fixed;
+    bottom: 0;
 }
