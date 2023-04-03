@@ -1,7 +1,8 @@
 body {
     background-color: rgb(67, 64, 64);
     color: rgb(255, 255, 255);
-    
+    height: fit-content;
+    width: fit-content;
    
 }
 h1 {
@@ -15,6 +16,16 @@ h1 {
                  0 9px 0 #ccc, 0 10px 0 #ccc,
                  0 11px 0 #ccc, 0 12px 0 #ccc,
                  0 20px 30px rgba(0, 0, 0, 0.5);
+}
+p {
+    font-size: 25px;
+}
+h2 {
+    font-size: 30px;
+}
+#img-container {
+    width: fit-content;
+    height: fit-content;
 }
 #welcome {
     text-align: center;
@@ -41,7 +52,7 @@ h1 {
     width: 100%;
     border: 2px solid black;
     margin: 2px;
-    font-size: 16px;
+    font-size: 25px;
 }
 .dropdown-content {
     width: 100%;

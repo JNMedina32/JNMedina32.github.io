@@ -9,29 +9,32 @@
 </head>
 <body>
     <div id="topPage">
-        <h1>Joshua Medina's <br> Interactive Resume</h1>
-        <p id="welcome">Welcome to my individual portfolio page! Get to know me. Click a section from the dropdown menu to view that part of my resume.</p>   
+        <h1>Joshua Medina's <br> Portfolio Page</h1>
+        <p id="welcome">Welcome to my individual portfolio page! Get to know me. Click a section from the dropdown menu to view that part of my resume, or view my resume <a href="Resources/Medina_Joshua_Resume.pdf" target="_blank">here.</a> </p>   
     </div>
     <div  class="dropdown">
         <button class="dropbtn">Resume Section</button>
             <div class="dropdown-content">
-                <a href="#earlyLife">Early Life</a>
-                <a href="#workHistory">Work History</a>
-                <a href="#education">Education</a>
-                <a href="#interests">Interests & Hobbies</a>
-                <a href="#goals">Goals</a>
+                <a href="#earlyLife" class="earlyLife">Early Life</a>
+                <a href="#workHistory" class="workHistory">Work History</a>
+                <a href="#education" class="education">Education</a>
+                <a href="#interests" class="interests">Interests & Hobbies</a>
+                <a href="#goals" class="goals">Goals</a>
+                <a href="#projects" class="projects">Projects</a>
             </div>
     </div>
     <div id="earlyLife">
         <h2>Early Life</h2>
         <p id="youngLife"><br>I was raised in South Florida by my mother with my 2 older brothers and 1 younger sister. I enjoyed chess, baseball, video games, Batman, math, Junior Reserve Officer Training Corps(JROTC), and Student Council (I was elected Sophmore Class President) at Piper High School in Sunrise, Florida.</p>
-        <img src="Resources\early-life-imgs\chess.jpeg" alt="chess world championship 2021" width="15%">
-        <img src="Resources\early-life-imgs\baseball.jpg" alt="baseball world series" width="15%">
-        <img src="Resources\early-life-imgs\videogames.jpg" alt="video games" width="15%">
-        <img src="Resources\early-life-imgs\batman.jpg" alt="batman" width="15%">
-        <img src="Resources\early-life-imgs\math.jpg" alt="math equations" width="15%">
-        <img src="Resources\early-life-imgs\studentcouncil.jpg" alt="student council" width="15%">
-        <img src="Resources\early-life-imgs\piper.jpg" alt="Piper High School, Home of the Bengals" width="15%">
+        <div id="img-container">
+            <img src="Resources\early-life-imgs\chess.jpeg" alt="chess world championship 2021" width="15%">
+            <img src="Resources\early-life-imgs\baseball.jpg" alt="baseball world series" width="15%">
+            <img src="Resources\early-life-imgs\videogames.jpg" alt="video games" width="15%">
+            <img src="Resources\early-life-imgs\batman.jpg" alt="batman" width="15%">
+            <img src="Resources\early-life-imgs\math.jpg" alt="math equations" width="15%">
+            <img src="Resources\early-life-imgs\studentcouncil.jpg" alt="student council" width="15%">
+            <img src="Resources\early-life-imgs\piper.jpg" alt="Piper High School, Home of the Bengals" width="15%">
+        </div>
     </div>
     <div id="workHistory">
         <h2>Work History</h2>
@@ -44,6 +47,9 @@
             <li id="contractor">2018 - 2023 Contractor for Qatar Emiri Air Force</li>
             <p id="contractorWork">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cumque quae esse!</p>
         </ul>
+    </div>
+    <div id="education">
+        <h2>Education</h2>
     </div>
     
     <script src="./scripts.js"></script>
