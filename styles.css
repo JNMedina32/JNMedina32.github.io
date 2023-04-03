@@ -21,3 +21,11 @@ p {
     width: 300px;
     margin: auto;
 }
+#sections {
+    width: 30%;
+    border: 1px solid white;
+}
+#topPage {
+    border: 1px solid white;
+    width: auto;
+}
