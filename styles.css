@@ -3,7 +3,7 @@ body {
     color: rgb(255, 255, 255);
     height: 100%;
     width: 100%;
-   
+    margin: auto;
 }
 h1 {
     font-size: 75px;
@@ -36,13 +36,15 @@ h2 {
 #topPage {
     border: 1px solid white;
     width: auto;
-    margin: 0px 0px 50px;
+    margin: 10px 20px 50px;
 }
 .dropdown {
     position: relative;
-    display: inline-block;
-    width: 20%;
-    ;
+    display: flex;
+    margin: 0% 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .dropbtn {
     background-color: black;
@@ -102,12 +104,27 @@ h2 {
 #projects {
     display: none;
 }
+li {
+    font-size: 20px;
+    border: 1px, solid, #ccc;
+}
 #armyWork, #armyReserveWork, #contractorWork {
     display: none;
 }
+/* changes display to reveal content */
 #army:hover + #armyWork {
     display: inline-block;
 }
 #armyReserve:hover + #armyReserveWork {
     display: inline-block;
+}
+#contractor:hover + #contractorWork {
+    display: inline-block;
+}
+footer {
+    color: rgb(39, 120, 56);
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    
 }
