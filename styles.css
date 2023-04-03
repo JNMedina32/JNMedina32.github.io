@@ -77,3 +77,9 @@ h1 {
     text-align: center;
     display: none;
 }
+#armyWork, #armyReserveWork, #contractorWork {
+    display: none;
+}
+#army:hover #armyWork {
+    display: block;
+}
