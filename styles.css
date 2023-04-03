@@ -1,8 +1,8 @@
 body {
     background-color: rgb(67, 64, 64);
     color: rgb(255, 255, 255);
-    height: fit-content;
-    width: fit-content;
+    height: 100%;
+    width: 100%;
    
 }
 h1 {
@@ -30,7 +30,7 @@ h2 {
 #welcome {
     text-align: center;
     font-size: 25px;
-    width: 300px;
+    width: 700px;
     margin: auto;
 }
 #topPage {
@@ -41,9 +41,8 @@ h2 {
 .dropdown {
     position: relative;
     display: inline-block;
-    width: 100%;
-
-    
+    width: 20%;
+    ;
 }
 .dropbtn {
     background-color: black;
@@ -88,9 +87,27 @@ h2 {
     text-align: center;
     display: none;
 }
+#workHistory {
+    display: none;
+}
+#education {
+    display: none;
+}
+#interests {
+    display: none;
+}
+#goals {
+    display: none;
+}
+#projects {
+    display: none;
+}
 #armyWork, #armyReserveWork, #contractorWork {
     display: none;
 }
-#army:hover #armyWork {
-    display: block;
+#army:hover + #armyWork {
+    display: inline-block;
+}
+#armyReserve:hover + #armyReserveWork {
+    display: inline-block;
 }
