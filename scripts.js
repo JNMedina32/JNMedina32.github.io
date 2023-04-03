@@ -15,7 +15,7 @@ const dropdownGoals = document.querySelector('a.goals');
 const dropdownProjects = document.querySelector('a.projects');
 //function to change displays of the resume when clicked dropdown sections
 dropdownEarlyLife.addEventListener('click', function(e){
-    earlyLife.style.display = 'inline-block';
+    earlyLife.style.display = 'block';
     workHistory.style.display = 'none'; 
     education.style.display = 'none'; 
     interests.style.display = 'none'; 
