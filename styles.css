@@ -4,9 +4,8 @@ body {
     height: 100%;
     width: 100%;
     margin: auto;
-    background-image: url('./Resources/bluePattern.jpg');
-    background-repeat: no-repeat;
-    position: absolute;
+    background-image: url('./Resources/clouds.jpg');
+    background-size: 100%;
 }
 h1 {
     font-size: 75px;
