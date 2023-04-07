@@ -1,141 +1,67 @@
-body {
-    background-color: rgb(95, 91, 91);
-    color: rgb(255, 255, 255);
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    background-image: url('./Resources/clouds.jpg');
-    background-size: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+:root {
+    --plum: #dda0dd;
+    --black: #000;
+    --white: #fff;
+    --border: .2rem solid var(--black);
+    --box-shadow: 0 1rem 1.5rem rgba(0,0,0,.3);
 }
-h1 {
-    font-size: 75px;
-    color: black;
-    text-align: center;
-    text-shadow: 0 1px 0 #f2ebeb, 0 2px 0 #ccc,
-                 0 3px 0 #ccc, 0 4px 0 #ccc,
-                 0 5px 0 #ccc, 0 6px 0 #ccc,
-                 0 7px 0 #ccc, 0 8px 0 #ccc,
-                 0 9px 0 #ccc, 0 10px 0 #ccc,
-                 0 11px 0 #ccc, 0 12px 0 #ccc,
-                 0 20px 30px rgba(0, 0, 0, 0.5);
-}
-p {
-    font-size: 25px;
-    text-align: center;
-}
-h2 {
-    font-size: 30px;
-}
-#img-container {
-    width: 95%;
-    height: fit-content;
-    display: flex;
-}
-#welcome {
-    text-align: center;
-    font-size: 25px;
-    width: 700px;
-    margin: auto;
-}
-#topPage {
-    border: 1px solid white;
-    width: auto;
-    margin: 10px 20px 50px;
-}
-.dropdown {
-    position: relative;
-    display: block;
-    margin: 0px 40vw;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.dropbtn {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    width: 100%;
-    border: 2px solid black;
-    margin: 2px;
-    font-size: 25px;
-}
-.dropdown-content {
-    width: 100%;
-    border: 1px solid white;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: none;
-    position: absolute;
-    background-color: black;
-    color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    transition: all 2s;
-}
-.dropdown-content a {
-    color: white;
-    padding: 12px 12px;
+
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
     text-decoration: none;
-    display: block;
-    
+    text-transform: capitalize;
 }
-/* change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-    transition: all ;
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
 }
-/* show dropdown menu */
-.dropdown:hover .dropdown-content {
-    display: block;
-    transition: all 2s;
+html::-webkit-scrollbar {
+    width: 1rem;
 }
-.dropdown:hover .dropbtn {
-    background-color: white;
-    color: black;
+html::-webkit-scrollbar-track {
+   background: var(--plum);
 }
-#earlyLife {
-    display: none;
+html::-webkit-scrollbar-thumb {
+    background: var(--black);
+ }
+body {
+    background-color: var(--plum);
+    overflow-x: hidden;
 }
-#workHistory {
-    display: none;
-}
-#education {
-    display: none;
-}
-#interests {
-    display: none;
-}
-#goals {
-    display: none;
-}
-#projects {
-    display: none;
-}
-ul {
-    font-size: 20px;
-    border: 1px, solid, #ccc;
-}
-#armyWork, #armyReserveWork, #contractorWork {
-    display: none;
-}
-/* changes display to reveal content */
-#army:hover + #armyWork {
-    display: inline-block;
-}
-#armyReserve:hover + #armyReserveWork {
-    display: inline-block;
-}
-#contractor:hover + #contractorWork {
-    display: inline-block;
-}
-footer {
-    color: rgb(48, 216, 84);
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
+.header {
+    padding: 1.5rem 10%;
     position: fixed;
-    bottom: 0;
-    justify-content: space-evenly;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--plum);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+.header #menu-btn {
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.7rem;
+    border-radius: 50%;
+    border: var(--border);
+    background: var(--white);
+    font-size: 1.7rem;
+    text-align: center;
+}
+.header #menu-btn:hover {
+    background: var(--black);
+    color: var(--white);
 }

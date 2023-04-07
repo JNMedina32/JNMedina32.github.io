@@ -5,40 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joshua Medina's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div id="topPage">
-        <h1>Joshua Medina's <br> Portfolio Page</h1>
-        <p id="welcome">Welcome to my individual portfolio page!<br> Get to know me. Click a section from the dropdown menu to view that part of my portfolio, or view my resume <a href="Resources/Medina_Joshua_Resume.pdf" target="_blank" style="color: yellowgreen;">here.</a> </p>   
-    </div>
-    <div  class="dropdown">
-        <button class="dropbtn">Portfolio Section</button>
-            <div class="dropdown-content">
-                <a href="#earlyLife" class="earlyLife">Early Life</a>
-                <a href="#workHistory" class="workHistory">Work History</a>
-                <a href="#education" class="education">Education</a>
-                <a href="#interests" class="interests">Interests & Hobbies</a>
-                <a href="#goals" class="goals">Goals</a>
-                <a href="#projects" class="projects">Projects</a>
-            </div>
+    <header class="header">
+        <a href="#home" class="logo">Portfolio</a>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services" data-src="Resources\navbar-images\navbar-img-3">services</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <div id="home">
+        <h1>Hi, I'm Joshua</h1>
+        <h2>Full-stack<br>Software Developer</h2>
     </div>
     <div id="portfolioContent">
-        <div id="earlyLife">
-            <h2>Early Life</h2>
-            <p id="youngLife"><br>I was raised in South Florida by my mother with my 2 older brothers and 1 younger sister. I enjoyed chess, baseball, video games, Batman, math, Junior Reserve Officer Training Corps(JROTC), and Student Council (I was elected Sophmore Class President) at Piper High School in Sunrise, Florida.</p>
-            <div id="img-container">
-                <img src="Resources\early-life-imgs\chess.jpeg" alt="chess world championship 2021" width="15%">
-                <img src="Resources\early-life-imgs\baseball.jpg" alt="baseball world series" width="15%">
-                <img src="Resources\early-life-imgs\videogames.jpg" alt="video games" width="15%">
-                <img src="Resources\early-life-imgs\batman.jpg" alt="batman" width="15%">
-                <img src="Resources\early-life-imgs\math.jpg" alt="math equations" width="15%">
-                <img src="Resources\early-life-imgs\studentcouncil.jpg" alt="student council" width="15%">
-                <img src="Resources\early-life-imgs\piper.jpg" alt="Piper High School, Home of the Bengals" width="15%">
-            </div>
         </div>
-        <div id="workHistory">
-            <h2>Work History</h2>
+        <div id="about">
+            <h2>About Me</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam in suscipit nesciunt fugiat eligendi dignissimos quas itaque maiores sit laudantium soluta, ratione eos provident laboriosam ipsam obcaecati et ad aspernatur.</p>
             <ul>
                 <li id="army">2008 - 2011 United States Army</li>
@@ -49,40 +39,16 @@
                     <p id="contractorWork">This will detail my work during my contract with the Qatari Emiri Air Force</p>
             </ul>
         </div>
-        <div id="education">
-            <h2>Education</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis perferendis ea.</p>
-            <h3>Colleges</h3>
-            <ul>
-                <li>Central Texas College: Associate of General Studies</li>
-                <li>State College of Florida: Software Engineering Boot Camp - Full Stack</li>
-            </ul>
-            <h3>Military Schools</h3>
-            <ul>
-                <li>Basic Training: Fort Jackson, SC<br>Graduated 2008</li>
-                <li>Airborne School: Fort Benning, GA<br>Graduated 2008</li>
-                <li>Advanced Individual Training (AIT)- Parachute Rigger: Fort Lee, VA<br>Graduated 2009</li>
-                <li>Basic Leadership Course: Fort Bragg, NC<br>Graduated 2012</li>
-                <li>Advanced Airborne School: Fort Bragg, NC<br>Graduated 2013</li>
-                <li>Pathfinder Course: Fort Benning, GA<br>Graduated 2014</li>
-                <li>Advanced Leadership Course: Fort Lee, VA<br>Graduated 2016</li>
-                <li>Military Free Fall Course: Yuma Proving Grounds, AZ<br>Graduated 2017</li>
-            </ul>
-        </div>
-        <div id="interests">
-            <h2>Interests</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus sapiente totam impedit ratione? Voluptate animi dignissimos cumque saepe hic impedit nulla deserunt doloremque delectus ea at pariatur, fugiat voluptatibus nostrum suscipit error quaerat explicabo omnis officia eligendi voluptates rem ipsam. Autem vel laboriosam in illum officia, iusto dignissimos nam repudiandae dolorum ipsum earum ipsam vitae fugiat maxime quidem quas dolor.</p>
-        </div>
-        <div id="goals">
-            <h2>Goals</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit neque omnis labore repudiandae, et est atque pariatur deleniti modi eius ea illum, sint tempora in laboriosam ducimus eveniet. Nihil dolores amet architecto, rerum reprehenderit impedit sed ratione nobis odit soluta cupiditate fugit recusandae expedita libero minima velit voluptate asperiores sint.</p>
-        </div>
         <div id="projects">
             <h2>Projects</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, deleniti. ipsum dolor sit amet consectetur adipisicing elit. Itaque officiis, quam consectetur illum adipisci ipsa sunt nihil incidunt qui placeat.</p>
         </div>
+        <div>
+            <h2>Contact me</h2>
+            <form action=""></form>
+        </div>
     </div>
-    <footer id="contact"><div id='div1'>Contact me:</div> JNMedina32@gmail.com or find me on <a href="https://www.linkedin.com/in/joshua-medina-a207b1122/" target="_blank" style="color: rgb(48, 216, 84);">LinkedIn</a></footer>
+    <footer id="contact"><div id='div1'>Contact me:</div> JNMedina32@gmail.com or find me on <a href="https://www.linkedin.com/in/joshua-medina-a207b1122/" target="_blank">LinkedIn</a></footer>
     <script src="./scripts.js"></script>
 </body>
 </html>

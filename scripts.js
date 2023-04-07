@@ -1,18 +1,14 @@
 //Resume sections variables
-const earlyLife = document.getElementById('earlyLife');
-const workHistory = document.getElementById('workHistory');
-const education = document.getElementById('education');
-const interests = document.getElementById('interests');
-const goals = document.getElementById('goals');
+const home = document.getElementById('home');
+const aboutMe = document.getElementById('aboutMe');
 const projects = document.getElementById('projects');
-const bodySections = [earlyLife, workHistory, education, interests, goals, projects];
+const contact = document.getElementById('contact');
+const bodySections = [home, aboutMe, projects, interests, goals, contact];
 //Dropdown menu variables
-const dropdownEarlyLife = document.querySelector('a.earlyLife');
-const dropdownWorkHistory = document.querySelector('a.workHistory');
-const dropdownEducation = document.querySelector('a.education');
-const dropdownInterests = document.querySelector('a.interests');
-const dropdownGoals = document.querySelector('a.goals');
-const dropdownProjects = document.querySelector('a.projects');
+const dropdownhome = document.querySelector('a.home');
+const dropdownWorkHistory = document.querySelector('a.aboutMe');
+const dropdownEducation = document.querySelector('a.projects');
+const dropdownProjects = document.querySelector('a.contact');
 //function to change displays of the resume when clicked dropdown sections
 const revealAndHide = (section) => {
     for(let key of bodySections){
@@ -24,9 +20,7 @@ const revealAndHide = (section) => {
     }
 };
 //Click events to reveal that section and hide the others
-dropdownEarlyLife.addEventListener('click', () => {revealAndHide(earlyLife)});
-dropdownWorkHistory.addEventListener('click', () => {revealAndHide(workHistory)});
-dropdownEducation.addEventListener('click', () => {revealAndHide(education)});
-dropdownInterests.addEventListener('click', () => {revealAndHide(interests)});
-dropdownGoals.addEventListener('click', () => {revealAndHide(goals)});
-dropdownProjects.addEventListener('click', () => {revealAndHide(projects)});
+dropdownhome.addEventListener('click', () => {revealAndHide(home)});
+dropdownWorkHistory.addEventListener('click', () => {revealAndHide(aboutMe)});
+dropdownEducation.addEventListener('click', () => {revealAndHide(projects)});
+dropdownProjects.addEventListener('click', () => {revealAndHide(contact)});
