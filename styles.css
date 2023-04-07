@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
 :root {
     --plum: #dda0dd;
+    --royal: #7851a9;
     --black: #000;
     --white: #fff;
     --border: .2rem solid var(--black);
@@ -64,4 +65,44 @@ body {
 .header #menu-btn:hover {
     background: var(--black);
     color: var(--white);
+}
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: calc(100% - 8rem);
+    width: 50%;
+    z-index: 1000;
+    background: var(--black);
+    padding: 0 9%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.navbar a{
+    font-size: 5.5rem;
+    color: var(--white);
+    text-transform: uppercase;
+    transition: .2s linear;
+}
+.navbar a:hover {
+    background: var(--royal);
+    font-size: 4rem;
+    transform: scale(.9);
+    color: var(--black);
+    padding: .5rem 2rem;
+}
+.navbar-img {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: calc(100% - 8rem);
+    width: 50%;
+    z-index: 1000;
+}
+.navbar-img img {
+    height: 50%;
+    width: 100%;
 }
