@@ -190,7 +190,7 @@ section {
     flex: 41rem;
     gap: 2rem;
 }
-.about .aboutMe .title {
+.about .title {
     font-size: 3rem;
     color: var(--royal);
     text-align: center;
