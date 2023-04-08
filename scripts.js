@@ -7,6 +7,13 @@ document.querySelectorAll('.navbar a').forEach(link => {
         document.querySelector('.navbar-img img').src = "Resources/navbar-images/navbar-img-1.jpg";
     };
 });
+//Displays Profile Image while hovering over name
+let homeImg = document.querySelector('.home .home-img');
+
+document.querySelector('.home').onmousemove = (e) => {
+    homeImg.style.top = e.pageY + 'px';
+    homeImg.style.left = e.pageX + 'px';
+}
 //variables for navbar
 let navbar = document.querySelector('.navbar');
 let navbarImg = document.querySelector('.navbar-img');
