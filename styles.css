@@ -184,7 +184,7 @@ section {
 .about {
     background: var(--black);
 }
-.about .aboutMe {
+.about .skill {
     display: flex;
     flex-wrap: wrap;
     flex: 41rem;
