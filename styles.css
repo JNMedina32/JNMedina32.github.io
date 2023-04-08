@@ -39,6 +39,10 @@ body {
 section {
     padding: 5rem 10%;
 }
+.heading {
+    text-align: center;
+    font-size: 7vw;
+}
 .header {
     padding: 1.5rem 10%;
     position: fixed;
@@ -120,6 +124,7 @@ section {
 .home {
     margin-top: 8rem;
     position: relative;
+    padding-bottom: 35rem;
 }
 .home h2 {
     text-align: center;
@@ -157,9 +162,41 @@ section {
     width: 100%;
     background: url(../Resources/home-imgs/wave.png) repeat-x;
     background-size: 250rem 30rem;
+    animation: wave 10s linear infinite;
 }
-
-
+@keyframes wave {
+    0%{
+        background-position-x: 0;
+    }
+    0%{
+        background-position-x: -250rem;
+    }
+}
+.home .wave.wave-2 {
+    opacity: .5;
+    animation-delay: .2s;
+    animation-direction: reverse;
+}
+.home .wave.wave-3 {
+    opacity: .7;
+    animation-duration: 5s;
+}
+.about {
+    background: var(--black);
+}
+.about .aboutMe {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 41rem;
+    gap: 2rem;
+}
+.about .aboutMe .title {
+    font-size: 3rem;
+    color: var(--royal);
+    text-align: center;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
 
 
 
