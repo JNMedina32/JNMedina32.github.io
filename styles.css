@@ -41,6 +41,24 @@ section {
 .heading {
     text-align: center;
     font-size: 7vw;
+    text-transform: uppercase;
+    color: var(--white);
+    -webkit-text-stroke: .2rem var(--black);
+    margin-bottom: 3rem;
+}
+.btn {
+    display: block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--main);
+    border: var(--border);
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.btn:hover {
+    background: var(--black);
+    color: var(--main);
 }
 .header {
     padding: 1.5rem 10%;
@@ -273,6 +291,35 @@ section {
 .about .info p span {
     color: var(--main);
 }
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+.services .box {
+    padding: 3rem 2rem;
+    border: var(--border);
+    background: var(--white);
+    text-align: center;
+}
+.services img {
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+.services h3 {
+    font-size: 2.5rem;
+}
+.services p {
+    font-size: 1.5rem;
+    padding: 1rem;
+    line-height: 2;
+}
+
+
+
+
+
+
 
 
 
@@ -306,6 +353,10 @@ section {
     }
 }
 @media (max-width:768px){
+
+    .heading {
+        font-size: 11vw;
+    }
 
     .navbar{
         width: 100%;
