@@ -373,6 +373,7 @@ section {
     }
     .navbar-img{
         width: 100%;
+        filter: grayscale();
     }
     .home h2 {
         font-size: 10vw;
