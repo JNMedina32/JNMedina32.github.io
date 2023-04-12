@@ -314,8 +314,32 @@ section {
     padding: 1rem;
     line-height: 2;
 }
-
-
+.contact {
+    background: linear-gradient(var(--black) 50%, var(--main));
+}
+.contact form {
+    max-width: 70rem;
+    margin: 0 auto;
+    background-color: var(--white);
+    border: var(--border);
+    padding: 2rem;
+}
+.contact .box {
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1.2rem 1.4rem;
+    text-transform: lowercase;
+    font-size: 2rem;
+    border: var(--border);
+}
+.contact .box:focus {
+    background-color: var(--black);
+    color: var(--white);
+}
+.contact form textarea {
+    height: 17rem;
+    resize: none;
+}
 
 
 
