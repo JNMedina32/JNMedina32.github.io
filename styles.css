@@ -340,6 +340,31 @@ section {
     height: 17rem;
     resize: none;
 }
+.footer {
+    text-align: center;
+}
+.footer .share a{
+    height: 7rem;
+    width: 7rem;
+    line-height: 6.5rem;
+    font-size: 3rem;
+    background-color: var(--white);
+    border: var(--border);
+    color: var(--black);
+    margin: 0 .3rem;
+}
+.footer .share a:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+.footer .link {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 2rem;
+}
+
 
 
 

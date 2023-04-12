@@ -17,6 +17,7 @@ document.querySelector('.home').onmousemove = (e) => {
 //variables for navbar
 let navbar = document.querySelector('.navbar');
 let navbarImg = document.querySelector('.navbar-img');
+
 //hides and shows nav bar elements
 document.querySelector('#menu-btn').onclick = () => {
     navbar.classList.toggle('active');
