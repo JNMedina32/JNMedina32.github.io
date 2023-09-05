@@ -1,0 +1,12 @@
+.user {
+  height: 8rem;
+  position: absolute;
+  bottom: 19px;
+  display: flex;
+  align-items: flex-end;
+  transition: left 0.2s linear;
+}
+
+img {
+  height: 50%;
+}

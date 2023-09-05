@@ -1,0 +1,76 @@
+.homeDiv.dark {
+  background-color: black;
+  color: black;
+  height: 100%;
+}
+
+.homeDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  color: var(--mainText);
+}
+
+.header {
+  text-align: center;
+}
+
+.homeContent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+
+  bottom: 10px;
+}
+
+.homeContentRight h2 {
+  margin: 0;
+}
+
+.profilePic.light {
+  max-width: 300px;
+  display: flex;
+}
+
+.profilePicFrame {
+  border: 15px double var(--accent1);
+  padding: 15px;
+  background-color: var(--mainText);
+}
+
+.profilePic.dark {
+  display: none;
+}
+
+span.dark {
+  color: black;
+}
+
+span.light {
+  color: var(--accent1);
+}
+
+.lightDiv {
+  position: absolute;
+  right: 20px;
+  bottom: 190px;
+  color: yellow;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .homeDiv.light {
+    flex-direction: column;
+  }
+
+  .homeContentLeft {
+    order: 2;
+    width: fit-content;
+  }
+  span.light {
+    color: var(--accent1);
+  }
+}

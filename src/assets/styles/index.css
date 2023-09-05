@@ -1,0 +1,39 @@
+:root {
+  --BG: #edf1e6;
+  --mainText: #124375;
+  --accent1: #aa5a4e;
+  --accent2: #55757e;
+  --accent3: #716574;
+  --accent4: #71609e;
+  --accent5: #8f3050;
+}
+* {
+  box-sizing: border-box;
+  /* border: 1px solid greenyellow; */
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: fit-content;
+
+  overflow-x: hidden;
+  background-color: var(--BG);
+}
+
+#root {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--BG);
+  color: var(--mainText);
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}

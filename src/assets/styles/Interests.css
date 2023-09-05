@@ -1,0 +1,9 @@
+.interestsDiv {
+  height: 100%;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top: 2px solid var(--accent2);
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.5);
+
+}
