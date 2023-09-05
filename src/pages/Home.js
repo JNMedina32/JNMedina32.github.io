@@ -1,5 +1,5 @@
 import "../assets/styles/Home.css";
-import { LightOffIcon, LightOnIcon } from "../assets/icons/bootstrapIcon";
+import { LightOffIcon, LightOnIcon } from "../assets/icons/faIcons";
 import { useContext, useState, useRef, useEffect } from "react";
 import { UserContext } from "../App";
 import ProfilePic from "../assets/images/ProfilePic.jpg";

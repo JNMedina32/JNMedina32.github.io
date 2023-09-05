@@ -9,7 +9,7 @@ import {
   ContactIcon,
   MasterOffIcon,
   MasterOnIcon,
-} from "../assets/icons/bootstrapIcon.js";
+} from "../assets/icons/faIcons.js";
 import "../assets/styles/NavBar.css";
 import { Link } from "react-router-dom";
 
@@ -35,6 +35,7 @@ export default function NavBar({ initialState, setInitialState }) {
         <Link to="/">
           <div className="icon-wrapper">
             <HomeIcon />
+
             <span className="tooltip-text">Home</span>
           </div>
         </Link>

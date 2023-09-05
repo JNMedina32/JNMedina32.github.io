@@ -4,7 +4,7 @@ import {
   ArrowDownIcon,
   ArrowUpIcon,
   SmileEmoji,
-} from "../assets/icons/bootstrapIcon";
+} from "../assets/icons/faIcons";
 import { timelineEvents } from "../assets/helpers/timelineEvents";
 import { useState, useEffect } from "react";
 
@@ -136,7 +136,9 @@ export default function Timeline() {
                   <h2>{timelineEvents[currentEventIndex].date}</h2>
                 </span>
               </div>
-              <p>{timelineEvents[currentEventIndex].description}</p>
+              <motion.div>
+                <p>{timelineEvents[currentEventIndex].description}</p>
+              </motion.div>
             </div>
           )}
         </div>
