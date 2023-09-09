@@ -1,21 +1,7 @@
-import { PlaneIcon } from "../icons/faIcons";
-import { motion } from "framer-motion";
-
 export const timelineEvents = [
   {
     date: "Jul 2008",
-    description: (
-      <motion.div
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <h2>
-          Joined the <span>US Army</span> as a Parachute Rigger!
-        </h2>
-      </motion.div>
-    ),
-    icon: <PlaneIcon />,
+    description: "Enlisted in the US Army as a 92R Parachute Rigger",
   },
   {
     date: "Oct 2008 - Nov 2008",

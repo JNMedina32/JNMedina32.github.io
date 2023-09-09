@@ -1,10 +1,10 @@
-import "../assets/styles/Timeline.css";
+import "../assets/styles/componentsCSS/Timeline.css";
 import { motion } from "framer-motion";
 import {
   ArrowDownIcon,
   ArrowUpIcon,
   SmileEmoji,
-} from "../assets/icons/faIcons";
+} from "../assets/icons/timelineIcons";
 import { timelineEvents } from "../assets/helpers/timelineEvents";
 import { useState, useEffect } from "react";
 
@@ -63,7 +63,7 @@ export default function Timeline() {
   };
 
   return (
-    <div className="timelineDiv">
+    <div className="timelineSection">
       <div className="timelineAnimation">
         <div className="timelineBar">
           {timelineEvents.map((_, index) => (
@@ -110,7 +110,7 @@ export default function Timeline() {
                 <span>My Timeline</span>
               </h1>
               <p>
-                This is a timeline of my life. Click play{" "}
+                This is a timeline of notable events in my life. Click play{" "}
                 <span>
                   <ArrowUpIcon />
                 </span>{" "}
@@ -159,7 +159,6 @@ export default function Timeline() {
                 .map((event, index) => (
                   <li className="listItem" key={index}>
                     <span>{event.date}:</span>
-
                     {event.description}
                   </li>
                 ))}

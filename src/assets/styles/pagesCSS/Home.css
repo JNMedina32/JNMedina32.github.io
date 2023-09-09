@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  justify-content: center;
   position: relative;
   color: var(--mainText);
 }
@@ -45,14 +45,6 @@
   display: none;
 }
 
-span.dark {
-  color: black;
-}
-
-span.light {
-  color: var(--accent1);
-}
-
 .lightDiv {
   position: absolute;
   right: 20px;
@@ -62,15 +54,29 @@ span.light {
 }
 
 @media (max-width: 768px) {
-  .homeDiv.light {
+  .homeDiv {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .homeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .homeContentLeft {
-    order: 2;
-    width: fit-content;
+  .homeContentRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  span.light {
-    color: var(--accent1);
+  .homeContentLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

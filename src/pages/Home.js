@@ -1,5 +1,5 @@
-import "../assets/styles/Home.css";
-import { LightOffIcon, LightOnIcon } from "../assets/icons/faIcons";
+import "../assets/styles/pagesCSS/Home.css";
+import { LightOffIcon, LightOnIcon } from "../assets/icons/navbarIcons";
 import { useContext, useState, useRef, useEffect } from "react";
 import { UserContext } from "../App";
 import ProfilePic from "../assets/images/ProfilePic.jpg";
@@ -38,7 +38,7 @@ export default function Home() {
       <div className="header">
         <h1>
           Hello, My Name is <br />
-          <span className={css}>JOSHUA MEDINA</span>
+          <span>JOSHUA MEDINA</span>
         </h1>
       </div>
       <div className="homeContent">
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
         <div className="homeContentRight">
           <h2>
-            I am a <span className={css}>Full Stack</span> Web Developer
+            I am a <span className="vipText">Full-Stack</span> Software Engineer
           </h2>
         </div>
       </div>

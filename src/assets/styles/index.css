@@ -1,25 +1,26 @@
 :root {
   --BG: #edf1e6;
   --mainText: #124375;
-  --accent1: #aa5a4e;
-  --accent2: #55757e;
-  --accent3: #716574;
-  --accent4: #71609e;
-  --accent5: #8f3050;
+  --accent1: #716574;
+  --accent2: #702d41;
+  --accent: #55757e;
+  --accent3: #aa5a4e;
 }
 * {
   box-sizing: border-box;
-  /* border: 1px solid greenyellow; */
+  /* border: 1px solid red; */
+}
+html {
+  height: 100%;
 }
 
 body {
   padding: 0;
+  height: 100%;
   margin: 0;
   display: flex;
   top: 0;
-  left: 0;
-  width: fit-content;
-
+  width: 100%;
   overflow-x: hidden;
   background-color: var(--BG);
 }
@@ -31,9 +32,18 @@ body {
   line-height: 1.5;
   background-color: var(--BG);
   color: var(--mainText);
-  left: 0;
   top: 0;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+span {
+  color: var(--accent2);
+}
+.vipText {
+  color: var(--accent1);
+  font-weight: bold;
+}
+.vipText2 {
+  color: var(--accent3);
+  font-weight: bold;
 }

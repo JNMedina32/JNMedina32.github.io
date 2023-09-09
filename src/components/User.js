@@ -1,11 +1,11 @@
 import { useEffect, useState, useContext } from "react";
 import { UserContext } from "../App";
 import { motion, useAnimation } from "framer-motion";
-import SFBase from "../assets/images/SFBase.jpg";
-import SFRunRight from "../assets/images/SFRunRight.jpg";
-import SFRunLeft from "../assets/images/SFRunLeft.jpg";
-import SFJumpRight from "../assets/images/SFJumpRight.jpg";
-import SFJumpLeft from "../assets/images/SFJumpLeft.jpg";
+import SFBase from "../assets/images/sfAnimations/SFBase.jpg";
+import SFRunRight from "../assets/images/sfAnimations/SFRunRight.jpg";
+import SFRunLeft from "../assets/images/sfAnimations/SFRunLeft.jpg";
+import SFJumpRight from "../assets/images/sfAnimations/SFJumpRight.jpg";
+import SFJumpLeft from "../assets/images/sfAnimations/SFJumpLeft.jpg";
 import "../assets/styles/User.css";
 
 export default function User() {

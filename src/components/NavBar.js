@@ -3,14 +3,13 @@ import { UserContext } from "../App";
 import {
   HomeIcon,
   AboutIcon,
-  BlogsIcon,
   ProjectsIcon,
   MenuIcon,
   ContactIcon,
   MasterOffIcon,
   MasterOnIcon,
-} from "../assets/icons/faIcons.js";
-import "../assets/styles/NavBar.css";
+} from "../assets/icons/navbarIcons.js";
+import "../assets/styles/componentsCSS/NavBar.css";
 import { Link } from "react-router-dom";
 
 export default function NavBar({ initialState, setInitialState }) {
@@ -26,7 +25,8 @@ export default function NavBar({ initialState, setInitialState }) {
   };
 
   return (
-    <div className="navBar">
+    <div style={{paddingRight: "20px"}}>
+    <nav className="navBar">
       <div className="menu-toggle" onClick={toggleMenu}>
         <MenuIcon />
         <span className="tooltip-text">Toggle Menu</span>
@@ -51,12 +51,6 @@ export default function NavBar({ initialState, setInitialState }) {
             <span className="tooltip-text">Projects I have worked on</span>
           </div>
         </Link>
-        <Link to="/blogs">
-          <div className="icon-wrapper">
-            <BlogsIcon />
-            <span className="tooltip-text">Technical Blogs I have written</span>
-          </div>
-        </Link>
         <Link to="/contact">
           <div className="icon-wrapper">
             <ContactIcon />
@@ -68,6 +62,7 @@ export default function NavBar({ initialState, setInitialState }) {
         {initialState ? <MasterOnIcon /> : <MasterOffIcon />}
         <span className="tooltip-text">Toggle/Reset Theme for every page</span>
       </div> */}
+    </nav>
     </div>
   );
 }

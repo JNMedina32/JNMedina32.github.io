@@ -7,7 +7,7 @@
   z-index: 999;
   top: 10px;
   margin: 10px;
-  width: 96%;
+  width: 100%;
 }
 .masterLight {
   color: yellow;
@@ -64,22 +64,31 @@
 }
 
 /* Mobile view */
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   .navBar {
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+    position: relative;
   }
 
   .collapse-menu {
     display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: var(--accent1);
   }
 
   .collapse-menu.show {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     color: var(--mainText);
-    left: 0;
+    z-index: 999;
+    padding: 20px;
   }
 
   .menu-toggle {

@@ -28,7 +28,7 @@ export const tabVariants = {
   lifted: {
     y: -10,
     transition: {
-      duration: 0.3,
+      duration: 0.5,
     }
   },
   landed: {
