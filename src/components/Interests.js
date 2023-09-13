@@ -1,12 +1,10 @@
 import "../assets/styles/componentsCSS/Interests.css";
-import {
-  PlaneIcon,
-  MapIcon,
-  TerminalIcon,
-  MusicIcon,
-} from "../assets/icons/interestsIcons";
+import Skydiving from "./interestsSections/Skydiving";
+import Music from "./interestsSections/Music";
+import Traveling from "./interestsSections/Traveling";
+import Coding from "./interestsSections/Coding";
 import Chessboard from "./interestsSections/Chessboard";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Interests() {
   const [showContent, setShowContent] = useState({});
@@ -59,7 +57,7 @@ export default function Interests() {
               </p>
             </div>
           ) : (
-            <PlaneIcon />
+            <Skydiving />
           )}
         </div>
         <div className="traveling" onClick={() => toggleContent("traveling")}>
@@ -69,7 +67,7 @@ export default function Interests() {
               <p>I Love to travel!</p>
             </div>
           ) : (
-            <MapIcon />
+            <Traveling />
           )}
         </div>
         <div className="coding" onClick={() => toggleContent("coding")}>
@@ -79,7 +77,7 @@ export default function Interests() {
               <p>I love to code! I started coding in 2019 and have been</p>
             </div>
           ) : (
-            <TerminalIcon />
+            <Coding />
           )}
         </div>
         <div className="music" onClick={() => toggleContent("music")}>
@@ -89,7 +87,7 @@ export default function Interests() {
               <p>I love to listen to music!</p>
             </div>
           ) : (
-            <MusicIcon />
+            <Music />
           )}
         </div>
       </div>

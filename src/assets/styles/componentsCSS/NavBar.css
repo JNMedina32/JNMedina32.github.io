@@ -1,3 +1,8 @@
+.navBarContainer {
+
+  margin-bottom: 20px;
+}
+
 .navBar {
   position: sticky;
   background-color: var(--accent1);
@@ -5,13 +10,7 @@
   justify-content: center;
   align-items: center;
   z-index: 999;
-  top: 10px;
-  margin: 10px;
   width: 100%;
-}
-.masterLight {
-  color: yellow;
-  position: relative;
 }
 
 .icon-wrapper {
@@ -43,7 +42,6 @@
   visibility: hidden;
   position: absolute;
   bottom: -28px;
-
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--accent2);
@@ -55,22 +53,18 @@
   z-index: 1;
 }
 
-.icon-wrapper:hover .tooltip-text {
-  visibility: visible;
-}
+.icon-wrapper:hover .tooltip-text,
 .masterLight:hover .tooltip-text {
   visibility: visible;
+}
+
+.masterLight:hover .tooltip-text {
   left: -55px;
 }
 
-/* Mobile view */
 @media (max-width: 575px) {
   .navBar {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    z-index: 999;
     position: relative;
   }
 
@@ -85,15 +79,12 @@
   .collapse-menu.show {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    color: var(--mainText);
-    z-index: 999;
     padding: 20px;
   }
 
   .menu-toggle {
-    color: var(--mainText);
     display: block;
     cursor: pointer;
+    color: var(--mainText);
   }
 }

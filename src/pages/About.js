@@ -4,10 +4,10 @@ import Timeline from "../components/Timeline";
 import Interests from "../components/Interests";
 import Skills from "../components/Skills";
 import { motion, AnimatePresence } from "framer-motion";
-import { contentVariants, tabVariants } from "../assets/helpers/motionVariants";
+import { contentVariants, tabVariants } from "../assets/helpers/aboutVariants";
 
 export default function About() {
-  const [activeTab, setActiveTab] = useState("skills");
+  const [activeTab, setActiveTab] = useState("interests");
 
   const handleClick = (tab) => {
     setActiveTab(tab);

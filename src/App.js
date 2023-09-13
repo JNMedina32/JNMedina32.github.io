@@ -1,45 +1,26 @@
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import { useState, createContext, useReducer, useEffect } from "react";
+import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider, ThemeContext } from "./assets/styles/ThemeContext";
 import "./assets/styles/App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import { useState, useEffect, useContext } from "react";
 
-
-
-import { userReducer, initialStateDark } from "./components/userReducer";
-
-export const UserContext = createContext();
-
-function App() {
-  const [initialState, setInitialState] = useState(false);
-
-  const [userState, userDispatch] = useReducer(userReducer, initialStateDark);
- 
-
-  useEffect(() => {
-    if (initialState) {
-      userDispatch({ type: "masterLightOn" });
-    } else {
-      userDispatch({ type: "masterLightOff" });
-    }
-  }, [initialState]);
-
+export default function App() {
   return (
-    <UserContext.Provider value={{ userState, userDispatch }}>
-      <NavBar initialState={initialState} setInitialState={setInitialState} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-
-    </UserContext.Provider>
+    <BrowserRouter>
+      <ThemeProvider>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
-
-export default App;

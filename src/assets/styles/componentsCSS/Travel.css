@@ -1,0 +1,33 @@
+.travelingAnimation {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mapDiv {
+  height: 100%;
+}
+
+.worldMap {
+  translate: -20%;
+}
+
+.planeDiv {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  z-index: 10;
+}
+
+.paperPlane {
+  color: black;
+  font-size: .5em;
+}
+
+.redLine {
+  background-color: red;
+  position: absolute;
+  z-index: 10;
+  height: 10px;
+}

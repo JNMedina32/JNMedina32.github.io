@@ -9,8 +9,8 @@
 }
 .interestsDiv > div {
   border: 1px solid var(--accent2);
-  height: 200px;
-  width: 200px;
+  height: 310px;
+  width: 310px;
   margin: 40px;
   display: flex;
   justify-content: center;
@@ -19,10 +19,27 @@
 }
 
 .interest {
-  height: 200px;
-  width: 200px;
+  height: 310px;
+  width: 310px;
   overflow-y: auto;
   display: block;
 }
 
+@media (max-width: 575px) {
+  .interestsDiv {
+    align-items: center;
+    flex-direction: column;
+  }
 
+  .interestsDiv > div {
+    height: 80vw;
+    width: 80vw; 
+    margin: 20px; 
+  }
+
+  .interest {
+    height: 80vw;
+    width: 80vw;
+    text-align: center;
+  }
+}

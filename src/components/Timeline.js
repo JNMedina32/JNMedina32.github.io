@@ -1,5 +1,6 @@
 import "../assets/styles/componentsCSS/Timeline.css";
 import { motion } from "framer-motion";
+import { timelineVariants } from "../assets/helpers/timelineVariants";
 import {
   ArrowDownIcon,
   ArrowUpIcon,
@@ -22,6 +23,8 @@ export default function Timeline() {
       currentEventIndex * (100 / totalEvents),
     100
   );
+
+  const { date, description, imgs } = timelineEvents[currentEventIndex];
 
   //-----Allow the timeline to move automatically
   useEffect(() => {
@@ -92,7 +95,7 @@ export default function Timeline() {
               justifyContent: "flex-end",
             }}
           >
-            <motion.div className="progressMark" />
+            <div className="progressMark" />
           </motion.div>
         </div>
         <div className="timelineBtnDiv">
@@ -114,7 +117,7 @@ export default function Timeline() {
                 <span>
                   <ArrowUpIcon />
                 </span>{" "}
-                to see it in action!
+                to see it in action!{" "}
                 <span>
                   <SmileEmoji />
                 </span>
@@ -130,20 +133,42 @@ export default function Timeline() {
               </p>
             </div>
           ) : (
-            <div>
-              <div className="eventListDate">
+            <div className="eventAnimationDiv">
+              <div className="eventListInfoAnimation">
                 <span>
-                  <h2>{timelineEvents[currentEventIndex].date}</h2>
+                  <h2>{date}</h2>
                 </span>
+                <p>{description}</p>
               </div>
-              <motion.div>
-                <p>{timelineEvents[currentEventIndex].description}</p>
-              </motion.div>
+              <div className="eventAnimation">
+                {imgs.map((img, index) => {
+                  const randomVariant =
+                    timelineVariants[
+                      Object.keys(timelineVariants)[
+                        Math.floor(
+                          Math.random() * Object.keys(timelineVariants).length
+                        )
+                      ]
+                    ];
+                  return (
+                    <motion.div
+                      className="eventImgDiv"
+                      key={index}
+                      {...randomVariant}
+                    >
+                      <img src={img.src} alt={img.alt} className="eventImg" />
+                      {img.caption && (
+                        <p className="eventImgCaption">{img.caption}</p>
+                      )}
+                    </motion.div>
+                  );
+                })}
+              </div>
             </div>
           )}
         </div>
       </div>
-      <hr />
+
       <div className="eventListSection">
         <button
           className="eventListBtn"

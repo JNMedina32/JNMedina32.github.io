@@ -1,0 +1,68 @@
+/* Skydiving.css */
+.skydivingAnimation {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* .skydivingAnimation * {
+  border: 1px solid red; 
+} */
+
+.sky {
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background-color: skyblue;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cloud {
+  width: fit-content; /* Adjust as per your image size */
+  margin-top: 10px;
+  height: 45px;
+  position: relative;
+  color: whitesmoke;
+}
+
+
+.planeAnimationDiv {
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.plane {
+  position: absolute; 
+  color: gray;
+}
+
+.paratrooper {
+  position: absolute;
+  width: 20px; 
+  height: 30px;
+}
+
+.ground {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  background-color: green;
+  bottom: 0;
+}
+
+.tree {
+  position: relative;
+  font-size: 35px;
+  z-index: 10;
+}

@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
-import { motion, useAnimation, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import "../assets/styles/componentsCSS/Card.css";
 import { underConstruction } from "../assets/icons/projectsIcons";
 
 export default function Card({ image, title, text, link, type }) {
   const [currentIconIndex, setCurrentIconIndex] = useState(0);
-  const controls = useAnimation();
   const [showContent, setShowContent] = useState(false);
 
   const toggleContent = () => {
@@ -14,58 +13,58 @@ export default function Card({ image, title, text, link, type }) {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIconIndex((prevState) => {
-        if (prevState === underConstruction.length - 1) {
-          return 0;
-        } else {
-          return prevState + 1;
-        }
-      });
+      setCurrentIconIndex((prevState) => (prevState === underConstruction.length - 1 ? 0 : prevState + 1));
     }, 2000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className={`card ${type}`}>
-      <div className="cardImgDiv">{image}</div>
-      <div className="cardContent">
-        <div className="cardTitle">{title}</div>
-        <div className="cardBody" onClick={toggleContent}>
-          {showContent ? (
-            <p className="cardText">{text}</p>
-          ) : (
-            <p className="cardText">Description</p>
-          )}
-        </div>
-        <div className="cardFoot">
-          {link ? (
-            <div className="cfContent">
-              <a
-                href={link}
-                target="_blank"
-                rel="noreferrer"
-                className="cardLink"
-              >
-                View
-              </a>
-            </div>
-          ) : (
-            <div className="cfContent">
-              <h6>Under Construction</h6>
+      <CardHeader image={image} />
+      <CardBody title={title} text={text} showContent={showContent} toggleContent={toggleContent} />
+      <CardFooter link={link} currentIconIndex={currentIconIndex} />
+    </div>
+  );
+}
 
-                <motion.div
-                  className="ucIconDiv"
-                  key={currentIconIndex}
-                  initial={{x: "40%" }}
-                  animate={{x: ["40%", "0%", "0%"], y: [0, 0, -30, 0] }}
-                >
-                  {underConstruction[currentIconIndex]}
-                </motion.div>
+function CardHeader({ image }) {
+  return <div className="cardImgDiv">{image}</div>;
+}
 
-            </div>
-          )}
-        </div>
+function CardBody({ title, text, showContent, toggleContent }) {
+  return (
+    <div className="cardContent">
+      <div className="cardTitle">{title}</div>
+      <div className="cardBody" onClick={toggleContent}>
+        <p className="cardText">{showContent ? text : "Description"}</p>
       </div>
     </div>
   );
 }
+
+function CardFooter({ link, currentIconIndex }) {
+  return (
+    <div className="cardFoot">
+      {link ? (
+        <div className="cfContent">
+          <a href={link} target="_blank" rel="noreferrer" className="cardLink">
+            View
+          </a>
+        </div>
+      ) : (
+        <div className="cfContent">
+          <h6>Under Construction</h6>
+          <motion.div 
+            className="ucIconDiv" 
+            key={currentIconIndex} 
+            initial={{ x: "40%" }} 
+            animate={{ x: ["40%", "0%", "0%"], y: [0, 0, -30, 0] }}
+          >
+            {underConstruction[currentIconIndex]}
+          </motion.div>
+        </div>
+      )}
+    </div>
+  );
+}
+

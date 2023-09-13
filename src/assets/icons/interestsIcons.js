@@ -3,6 +3,8 @@ import {
   faPlane,
   faTerminal,
   faMusic,
+  faCloud,
+  faTree,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faBookmark,
@@ -13,10 +15,15 @@ import {
   faChessQueen,
   faChessKing,
   faMap,
-  
 } from "@fortawesome/free-regular-svg-icons";
 
+export const TreeIcon = () => (
+  <FontAwesomeIcon icon={faTree} size="2xl" />
+);
 
+export const CloudIcon = () => (
+  <FontAwesomeIcon icon={faCloud} size="2xl" />
+);
 
 export const MusicIcon = () => (
   <FontAwesomeIcon icon={faMusic} size="2xl" />

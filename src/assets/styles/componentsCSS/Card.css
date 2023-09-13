@@ -94,7 +94,7 @@
   display: flex;
   align-items: flex-start;
   align-self: flex-start;
-  padding: 0;
+  padding: 10px;
   height: 120px;
   overflow-y: auto;
 }
@@ -116,11 +116,10 @@
 
 .cardFoot {
   width: 100%;
-  background-color: var(--accent1);
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  padding: 0;
+  padding: 10px;
   margin: 0 0 16px 0;
 }
 .cfContent > h6 {
@@ -155,4 +154,34 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+@media (max-width: 575px) {
+  .card {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+  }
+  
+  .cardContent, .blog .cardContent {
+    height: auto;
+    padding: 10px;
+  }
+
+  .cardTitle, .blog .cardTitle {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .cardBody {
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .cardFoot {
+    margin-bottom: 10px;
+  }
+
+  .cardText {
+    font-size: 0.9em;
+  }
 }

@@ -6,7 +6,7 @@ import {
   faChessKing,
 } from "@fortawesome/free-regular-svg-icons";
 import "../../assets/styles/componentsCSS/Chessboard.css";
-import { motion, animate } from "framer-motion";
+import { motion } from "framer-motion";
 import { knightMoves, rookMoves } from "../../assets/helpers/chessMotions";
 
 export default function Chessboard() {

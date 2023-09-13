@@ -5,7 +5,13 @@ import {
   faLaptopCode,
   faAddressBook,
   faBars,
+  faSun,
+  faMoon,
 } from "@fortawesome/free-solid-svg-icons";
+
+export const SunIcon = () => <FontAwesomeIcon icon={faSun} size="2x" />;
+
+export const MoonIcon = () => <FontAwesomeIcon icon={faMoon} size="2x" />;
 
 export const HomeIcon = () => (
   <FontAwesomeIcon icon={faHouseChimney} size="2xl" />

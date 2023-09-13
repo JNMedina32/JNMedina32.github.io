@@ -41,6 +41,7 @@ export default function Skills() {
                       <li>React</li>
                       <li>Responsive Design</li>
                       <li>Bootstrap</li>
+                      <li>Framer-Motion</li>
                     </ul>
                   </div>
                 </div>

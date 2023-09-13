@@ -1,32 +1,19 @@
-:root {
-  --BG: #edf1e6;
-  --mainText: #124375;
-  --accent1: #716574;
-  --accent2: #702d41;
-  --accent: #55757e;
-  --accent3: #aa5a4e;
-}
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 html {
   height: 100%;
 }
 
 body {
-  padding: 0;
-  height: 100%;
-  margin: 0;
-  display: flex;
-  top: 0;
-  width: 100%;
   overflow-x: hidden;
   background-color: var(--BG);
 }
 
 #root {
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -46,4 +33,10 @@ span {
 .vipText2 {
   color: var(--accent3);
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #root {
+    font-size: 18px;
+  }
 }
