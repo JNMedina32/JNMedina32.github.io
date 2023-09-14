@@ -1,43 +1,81 @@
 import "../../assets/styles/componentsCSS/Coding.css";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+import {
+  motion,
+  useAnimate,
+  useInView,
+  stagger,
+  AnimatePresence,
+  useMotionValue,
+} from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function TerminalAnimation() {
-  const controls = useAnimation();
+  const [scope, animate] = useAnimate();
+  const isInView = useInView(scope);
+  const [showCursor1, setShowCursor1] = useState(true);
+  const [showCursor2, setShowCursor2] = useState(true);
+  const [showCursor3, setShowCursor3] = useState(true);
+
+  const cursorSequence = [
+    [".terminalCursor", { opacity: [0, 1] }, { duration: 0.5 }],
+  ];
+
+  const showCursor = (cursor, setCursor, num) => {
+    if (!cursor) {
+      setCursor(true);
+    }
+    setTimeout(() => {
+      setCursor(false);
+    }, num);
+  };
 
   useEffect(() => {
-    controls.start({
-      opacity: [0, 1],
-      transition: { duration: 1 },
-    });
-
-    controls.start({
-      scale: [1, 1.02],
-      transition: { yoyo: Infinity, duration: 0.5 },
-    });
-  }, [controls]);
+    if (isInView) {
+      animate(cursorSequence, { repeat: Infinity });
+      animate(
+        ".terminalLine",
+        { width: ["0%", "100%"], opacity: [0, 1] },
+        {
+          duration: 3,
+          opacity: { duration: 0.5 },
+          delay: stagger(4),
+        }
+      );
+      showCursor(showCursor1, setShowCursor1, 4000);
+      showCursor(showCursor2, setShowCursor2, 8000);
+    }
+  }, [isInView]);
 
   return (
-    <motion.div
-      className="codingAnimation"
-      animate={controls}
-    >
-      <motion.div
-        className="terminalContent"
-        initial={{ width: 0 }}
-        animate={{ width: "100%" }}
-        transition={{ delay: 1, duration: 2, ease: "linear" }}
-      >
-        &gt; npm install framer-motion{"\n"}
-        &gt; cd my-react-app{"\n"}
-        &gt; npm start{"\n"}
+    <AnimatePresence>
+      <motion.div className="codingAnimation" ref={scope}>
+        <section id="firstLine" className="terminalLineContainer">
+          <div className="terminalLine">
+            <p
+              className="terminalCursor"
+              style={showCursor1 ? { display: "block" } : { display: "none" }}
+            />
+            <p className="terminalText">&gt; npm install framer-motion</p>
+          </div>
+        </section>
+        <section id="secondLine" className="terminalLineContainer">
+          <div className="terminalLine">
+            <p
+              className="terminalCursor"
+              style={showCursor2 ? { display: "block" } : { display: "none" }}
+            />
+            <p className="terminalText">&gt; cd my-react-app</p>
+          </div>
+        </section>
+        <section id="thirdLine" className="terminalLineContainer">
+          <div className="terminalLine">
+            <p
+              className="terminalCursor"
+            />
+            <p className="terminalText">&gt; npm start</p>
+          </div>
+        </section>
       </motion.div>
-      <motion.div
-        className="terminalCursor"
-        initial={{ opacity: 1 }}
-        animate={{ opacity: [1, 0] }}
-        transition={{ yoyo: Infinity, duration: 0.5, delay: 3 }}
-      ></motion.div>
-    </motion.div>
+    </AnimatePresence>
   );
 }

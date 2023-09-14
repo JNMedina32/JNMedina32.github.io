@@ -74,7 +74,7 @@ export default function Interests() {
           {showContent.coding ? (
             <div className="interest">
               <h4>Coding</h4>
-              <p>I love to code! I started coding in 2019 and have been</p>
+              <p>During the COVID-19 slowdown in Qatar, I began exploring coding through freeCodeCamp.org's HTML & CSS courses. However, it was their JavaScript curriculum that ignited my passion for coding, fostering my transition into this field due to its demand for critical thinking and problem-solving skills.</p>
             </div>
           ) : (
             <Coding />
