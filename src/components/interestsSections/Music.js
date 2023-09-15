@@ -1,45 +1,54 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMusic } from "@fortawesome/free-solid-svg-icons";
-import { motion } from "framer-motion";
+import TrebleClef from "../../assets/images/interestsImgs/trebleClef.jpg";
+import musicNoteBlack from "../../assets/images/interestsImgs/musicNoteBlack.jpg";
+import musicNoteWhite from "../../assets/images/interestsImgs/musicNoteWhite.png";
+import { motion, useAnimate, useInView, stagger } from "framer-motion";
 import "../../assets/styles/componentsCSS/Music.css";
-import piano from "../../assets/images/interestsImgs/piano.jpg";
 import { useEffect, useState } from "react";
-
-const notesSequence = ["E", "D#", "E", "D#", "E", "B", "D", "C", "A"];
-const pianoKeys = ["C", "D", "E", "F", "G", "A", "B", "C"];
+import { noteSequence, pianoKeys } from "../../assets/helpers/pianoNotes";
 
 export default function Music() {
-  const [currentNote, setCurrentNote] = useState(-1);
-
-  const playNotes = () => {
-    let noteIndex = 0;
-    const intervalId = setInterval(() => {
-      setCurrentNote(noteIndex);
-      noteIndex += 1;
-      if (noteIndex >= notesSequence.length) {
-        clearInterval(intervalId);
-      }
-    }, 500); // Adjust the interval to change the speed of the playback
-  };
+  const [scope, animate] = useAnimate();
+  const isInView = useInView(scope);
 
   useEffect(() => {
-    playNotes();
-  }, []);
+    if (isInView) {
+      animate(noteSequence);
+    }
+  }, [isInView]);
 
   return (
-    <div className="musicAnimation">
+    <section className="musicAnimation" ref={scope}>
+      <div className="sheetMusicContainer">
+        <img src={TrebleClef} alt="treble clef" className="trebleClef" />
+        <div className="sheetMusic">
+          <div className="sheetSpace six"></div>
+          <div className="sheetSpace five"></div>
+          <div className="sheetSpace four"></div>
+          <div className="sheetSpace three"></div>
+          <div className="sheetSpace two">
+            <img src={musicNoteBlack} className="note" id="noteOne" />
+            <img src={musicNoteBlack} className="note" id="noteTwo" />
+            <img src={musicNoteBlack} className="note" id="noteThree" />
+            <img src={musicNoteBlack} className="note" id="noteFour" />
+            <img src={musicNoteBlack} className="note" id="noteFive" />
+            <img src={musicNoteBlack} className="note" id="noteSix" />
+            <img src={musicNoteBlack} className="note" id="noteSeven" />
+            <img src={musicNoteBlack} className="note" id="noteEight" />
+            <img src={musicNoteWhite} className="note" id="noteNine" />
+          </div>
+          <div className="sheetSpace one"></div>
+        </div>
+      </div>
       <div className="musicNotesContainer"></div>
       <div className="piano">
-        {notesSequence.map((note, index) => (
-          <motion.div
-            key={index}
-            className={`pianoKey ${note}`}
-            style={{
-              backgroundColor: currentNote === index ? "yellow" : "white",
-            }}
-          />
+        {pianoKeys.map((note, index) => (
+          <div key={index} className={`pianoKey ${note}`}>
+
+          </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

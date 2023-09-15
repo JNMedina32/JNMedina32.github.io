@@ -4,8 +4,6 @@ import {
   useAnimate,
   useInView,
   stagger,
-  AnimatePresence,
-  useMotionValue,
 } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -14,7 +12,6 @@ export default function TerminalAnimation() {
   const isInView = useInView(scope);
   const [showCursor1, setShowCursor1] = useState(true);
   const [showCursor2, setShowCursor2] = useState(true);
-  const [showCursor3, setShowCursor3] = useState(true);
 
   const cursorSequence = [
     [".terminalCursor", { opacity: [0, 1] }, { duration: 0.5 }],
@@ -47,35 +44,31 @@ export default function TerminalAnimation() {
   }, [isInView]);
 
   return (
-    <AnimatePresence>
-      <motion.div className="codingAnimation" ref={scope}>
-        <section id="firstLine" className="terminalLineContainer">
-          <div className="terminalLine">
-            <p
-              className="terminalCursor"
-              style={showCursor1 ? { display: "block" } : { display: "none" }}
-            />
-            <p className="terminalText">&gt; npm install framer-motion</p>
-          </div>
-        </section>
-        <section id="secondLine" className="terminalLineContainer">
-          <div className="terminalLine">
-            <p
-              className="terminalCursor"
-              style={showCursor2 ? { display: "block" } : { display: "none" }}
-            />
-            <p className="terminalText">&gt; cd my-react-app</p>
-          </div>
-        </section>
-        <section id="thirdLine" className="terminalLineContainer">
-          <div className="terminalLine">
-            <p
-              className="terminalCursor"
-            />
-            <p className="terminalText">&gt; npm start</p>
-          </div>
-        </section>
-      </motion.div>
-    </AnimatePresence>
+    <motion.div className="codingAnimation" ref={scope}>
+      <section id="firstLine" className="terminalLineContainer">
+        <div className="terminalLine">
+          <p
+            className="terminalCursor"
+            style={showCursor1 ? { display: "block" } : { display: "none" }}
+          />
+          <p className="terminalText">&gt; npm install framer-motion</p>
+        </div>
+      </section>
+      <section id="secondLine" className="terminalLineContainer">
+        <div className="terminalLine">
+          <p
+            className="terminalCursor"
+            style={showCursor2 ? { display: "block" } : { display: "none" }}
+          />
+          <p className="terminalText">&gt; cd my-react-app</p>
+        </div>
+      </section>
+      <section id="thirdLine" className="terminalLineContainer">
+        <div className="terminalLine">
+          <p className="terminalCursor" />
+          <p className="terminalText">&gt; npm start</p>
+        </div>
+      </section>
+    </motion.div>
   );
 }
