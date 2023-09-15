@@ -18,8 +18,9 @@ export default function Home() {
         </div>
         <div className="homeContentRight">
           <h2>
-            I am a <span className="vipText">Full-Stack</span> Software Engineer
+            <span className="vipText">Full-Stack</span> Software Engineer
           </h2>
+          <h3>Army <span>Veteran</span></h3>
         </div>
       </div>
     </div>

@@ -4,7 +4,10 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  justify-self: center;
+  align-self: center;
   color: var(--mainText);
+  max-width: 60%;
 }
 
 .header {
