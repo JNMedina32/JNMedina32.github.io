@@ -1,12 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMusic } from "@fortawesome/free-solid-svg-icons";
 import TrebleClef from "../../assets/images/interestsImgs/trebleClef.jpg";
-import musicNoteBlack from "../../assets/images/interestsImgs/musicNoteBlack.jpg";
-import musicNoteWhite from "../../assets/images/interestsImgs/musicNoteWhite.png";
-import { motion, useAnimate, useInView, stagger } from "framer-motion";
+import { useAnimate, useInView, stagger } from "framer-motion";
 import "../../assets/styles/componentsCSS/Music.css";
-import { useEffect, useState } from "react";
-import { noteSequence, pianoKeys } from "../../assets/helpers/pianoNotes";
+import { useEffect } from "react";
+import { noteSequence, pianoKeys, MusicNoteBlack, MusicNoteWhite } from "../../assets/helpers/pianoNotes";
 
 export default function Music() {
   const [scope, animate] = useAnimate();
@@ -28,15 +26,17 @@ export default function Music() {
           <div className="sheetSpace four"></div>
           <div className="sheetSpace three"></div>
           <div className="sheetSpace two">
-            <img src={musicNoteBlack} className="note" id="noteOne" />
-            <img src={musicNoteBlack} className="note" id="noteTwo" />
-            <img src={musicNoteBlack} className="note" id="noteThree" />
-            <img src={musicNoteBlack} className="note" id="noteFour" />
-            <img src={musicNoteBlack} className="note" id="noteFive" />
-            <img src={musicNoteBlack} className="note" id="noteSix" />
-            <img src={musicNoteBlack} className="note" id="noteSeven" />
-            <img src={musicNoteBlack} className="note" id="noteEight" />
-            <img src={musicNoteWhite} className="note" id="noteNine" />
+            <div className="furElise">
+              <p className="note" id="noteOne" ><MusicNoteBlack /></p>
+              <p className="note" id="noteTwo" ><MusicNoteBlack /></p>
+              <p className="note" id="noteThree" ><MusicNoteBlack /></p>
+              <p className="note" id="noteFour" ><MusicNoteBlack /></p>
+              <p className="note" id="noteFive" ><MusicNoteBlack /></p>
+              <p className="note" id="noteSix" ><MusicNoteBlack /></p>
+              <p className="note" id="noteSeven" ><MusicNoteBlack /></p>
+              <p className="note" id="noteEight" ><MusicNoteBlack /></p>
+              <p className="note" id="noteNine" ><MusicNoteWhite /></p>
+            </div>
           </div>
           <div className="sheetSpace one"></div>
         </div>

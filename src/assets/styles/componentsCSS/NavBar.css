@@ -1,5 +1,4 @@
 .navBarContainer {
-
   margin-bottom: 20px;
 }
 
@@ -16,13 +15,13 @@
 .icon-wrapper {
   padding: 10px;
   border-radius: 50%;
-  color: var(--mainText);
+  color: var(--accent2);
   position: relative;
 }
 
 .icon-wrapper:hover {
   background-color: var(--BG);
-  color: var(--accent2);
+  color: var(--mainText);
 }
 
 .menu-toggle {
@@ -44,7 +43,7 @@
   bottom: -28px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--accent2);
+  background-color: var(--mainText);
   color: var(--BG);
   padding: 5px;
   border-radius: 3px;
