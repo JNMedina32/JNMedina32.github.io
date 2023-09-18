@@ -9,7 +9,7 @@ export const ThemeProvider = ({ children }) => {
     "--accent1": "#716574",
     "--accent2": "#702d41",
     "--accent": "#55757e",
-    "--accent3": "#aa5a4e",
+    "--accent3": "#41375B",
   };
 
   const darkTheme = {
@@ -18,7 +18,7 @@ export const ThemeProvider = ({ children }) => {
     "--accent1": "#55757e",
     "--accent2": "#702d41",
     "--accent": "#aa5a4e",
-    "--accent3": "#55757e",
+    "--accent3": "#41375B",
   };
 
   const [isLightTheme, setIsLightTheme] = useState(true);

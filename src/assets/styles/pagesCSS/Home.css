@@ -7,8 +7,59 @@
   justify-self: center;
   align-self: center;
   color: var(--mainText);
-  max-width: 70%;
+  max-width: 75%;
+  overflow: hidden;
+  padding: 20px;
+  margin: 20px;
 }
+
+.homeDiv::before, 
+.homeDiv::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 8px;
+}
+
+.homeDiv::before,
+.homeDiv2::before {
+  top: 0;
+  left: 0;
+}
+
+.homeDiv::after,
+.homeDiv2::after {
+  bottom: 0;
+  right: 0;
+}
+
+.homeDiv2::before,
+.homeDiv2::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 8px;
+}
+
+
+/* transparent, blue, red, blue, transparent scheme */
+.homeDiv::before {
+  background: linear-gradient(to left, transparent 1%, var(--mainText) 33%, var(--accent2) 66%, var(--accent2));
+}
+
+.homeDiv2::before {
+  background: linear-gradient(to top, transparent 1%, var(--mainText) 33%, var(--accent2) 66%, var(--accent2));
+}
+
+.homeDiv::after {
+  background: linear-gradient(to right, transparent 1%, var(--mainText) 33%, var(--accent2) 66%, var(--accent2));
+}
+
+.homeDiv2::after {
+  background: linear-gradient(to bottom, transparent 1%, var(--mainText) 33%, var(--accent2) 66%, var(--accent2));
+}
+
+
 
 .header {
   text-align: center;

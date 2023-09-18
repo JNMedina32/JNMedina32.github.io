@@ -8,6 +8,20 @@ import { useState } from "react";
 
 export default function Interests() {
   const [showContent, setShowContent] = useState({});
+  const travelLocations = [
+    "Hawaii",
+    "France",
+    "Portugal",
+    "Spain",
+    "England",
+    "Qatar",
+    "Kuwait",
+    "Costa Rica",
+    "Puerto Rico",
+    "Albania",
+    "Turkey",
+    "Various US States",
+  ];
 
   const toggleContent = (contentKey) => {
     setShowContent((prevState) => ({
@@ -63,8 +77,20 @@ export default function Interests() {
         <div className="traveling" onClick={() => toggleContent("traveling")}>
           {showContent.traveling ? (
             <div className="interest">
-              <h4>Traveling</h4>
-              <p>I Love to travel!</p>
+              <h4>
+                <span>Traveling</span>
+              </h4>
+              <p>
+                Raised in South Florida, my first duty station was in Alaska.
+                The moment I stepped outside the airport and I saw mountains for
+                the first time, I knew I wanted to see what the rest of the
+                world had to offer. Since then I have been to:{" "}
+                <ul className="locations">
+                  {travelLocations.map((location) => (
+                    <li key={location}>{location}</li>
+                  ))}
+                </ul>{" "}
+              </p>
             </div>
           ) : (
             <Traveling />
@@ -73,8 +99,16 @@ export default function Interests() {
         <div className="coding" onClick={() => toggleContent("coding")}>
           {showContent.coding ? (
             <div className="interest">
-              <h4>Coding</h4>
-              <p>During the COVID-19 slowdown in Qatar, I began exploring coding through freeCodeCamp.org's HTML & CSS courses. However, it was their JavaScript curriculum that ignited my passion for coding, fostering my transition into this field due to its demand for critical thinking and problem-solving skills.</p>
+              <h4>
+                <span>Coding</span>
+              </h4>
+              <p>
+                During the COVID-19 slowdown in Qatar, I began exploring coding
+                through freeCodeCamp.org's HTML & CSS courses. However, it was
+                their JavaScript curriculum that ignited my passion for coding,
+                fostering my transition into this field due to its demand for
+                critical thinking and problem-solving skills.
+              </p>
             </div>
           ) : (
             <Coding />
@@ -83,8 +117,16 @@ export default function Interests() {
         <div className="music" onClick={() => toggleContent("music")}>
           {showContent.music ? (
             <div className="interest">
-              <h4>Music</h4>
-              <p>I love to listen to music!</p>
+              <h4>
+                <span>Playing the Piano</span>
+              </h4>
+              <p>
+                Another hobby picked up during the COVID-19 slowdown, I
+                rekindled my childhood interest in piano playing. While the
+                aspiration to perform in a symphony may remain unrealized, I
+                find great fulfillment in honing my skills and witnessing my own
+                progression.
+              </p>
             </div>
           ) : (
             <Music />

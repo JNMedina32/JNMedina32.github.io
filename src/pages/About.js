@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { contentVariants, tabVariants } from "../assets/helpers/aboutVariants";
 
 export default function About() {
-  const [activeTab, setActiveTab] = useState("interests");
+  const [activeTab, setActiveTab] = useState("skills");
 
   const handleClick = (tab) => {
     setActiveTab(tab);

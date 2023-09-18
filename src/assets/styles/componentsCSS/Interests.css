@@ -25,6 +25,10 @@
   display: block;
 }
 
+.locations {
+  list-style: circle;
+}
+
 @media (max-width: 575px) {
   .interestsDiv {
     align-items: center;

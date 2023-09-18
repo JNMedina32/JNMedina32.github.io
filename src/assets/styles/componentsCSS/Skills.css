@@ -4,12 +4,13 @@
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  font-family: 'Arial, sans-serif';
-  color: var(--BG); 
+  font-family: "Arial, sans-serif";
+  color: var(--BG);
   background-color: var(--accent1);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  text-align: center;
 }
 
 .skillsListSection {
@@ -22,6 +23,8 @@
   width: 100%;
 }
 
+
+
 .tier {
   display: flex;
   justify-content: space-evenly;
@@ -30,40 +33,53 @@
 }
 
 .skillList {
-  width: 45%;
+  padding: 0;
 }
 
-h4, h5 {
-  text-align: center;
-  margin-bottom: 10px; /* Adding some bottom margin */
+.skill {
+  list-style-type: none;
+  padding-left: 40px;
+  margin-bottom: 10px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+}
+.skillIcon,
+.myIcon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-h5 {
+.myIcon {
   color: var(--accent2);
+  background-color: var(--BG);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-family: "Courier New", Courier, monospace;
 }
 
-ul {
-  list-style-type: square;
-  padding: 0 20px; /* Adding some padding */
-  margin: 0;
+
+.initials {
+  display: flex;
+  font-size: 10px;
+  flex-direction: column;
 }
 
-li {
-  margin-bottom: 5px; /* Adding some space between list items */
-}
-
-/* Adding a hover effect to the list items */
-li:hover {
-  color: var(--accent2); 
-  transition: color 0.3s;
-}
 
 @media (max-width: 575px) {
   .skillsSection {
     padding: 30px;
   }
 
-  h4, h5 {
+  h4,
+  h5 {
     font-size: 18px;
   }
 
