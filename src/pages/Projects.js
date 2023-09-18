@@ -31,6 +31,7 @@ export default function Projects() {
                 text={project.text}
                 link={project.link}
                 type={project.type}
+                learned={project.learned}
               />
             ))}
           </div>
@@ -46,6 +47,7 @@ export default function Projects() {
                 text={blog.text}
                 link={blog.link}
                 type={blog.type}
+                learned={blog.learned}
               />
             ))}
           </div>

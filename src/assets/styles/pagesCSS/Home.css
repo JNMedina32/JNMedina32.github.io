@@ -1,13 +1,12 @@
 .homeDiv {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   position: relative;
   justify-self: center;
   align-self: center;
   color: var(--mainText);
-  max-width: 75%;
+  width: 80%;
   overflow: hidden;
   padding: 20px;
   margin: 20px;

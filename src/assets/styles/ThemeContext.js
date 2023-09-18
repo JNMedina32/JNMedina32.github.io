@@ -8,7 +8,7 @@ export const ThemeProvider = ({ children }) => {
     "--mainText": "#124375",
     "--accent1": "#716574",
     "--accent2": "#702d41",
-    "--accent": "#55757e",
+    "--accent": "#aa5a4e",
     "--accent3": "#41375B",
   };
 
@@ -35,9 +35,10 @@ export const ThemeProvider = ({ children }) => {
   }, [isLightTheme]);
 
   return (
-    <ThemeContext.Provider value={{ theme: isLightTheme ? lightTheme : darkTheme, toggleTheme }}>
+    <ThemeContext.Provider
+      value={{ theme: isLightTheme ? lightTheme : darkTheme, toggleTheme }}
+    >
       {children}
     </ThemeContext.Provider>
   );
 };
-
