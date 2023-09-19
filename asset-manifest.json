@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.35e9bfb1.css",
+    "main.css": "/static/css/main.6edb0d75.css",
     "main.js": "/static/js/main.38fedd46.js",
     "static/media/CodingCampGraduates3.jpg": "/static/media/CodingCampGraduates3.1fb67e797ff467b8fe7d.jpg",
     "static/media/Qatar.jpg": "/static/media/Qatar.242ec6006b45baef0f47.jpg",
@@ -43,11 +43,11 @@
     "static/media/expressjsIcon.svg": "/static/media/expressjsIcon.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
     "static/media/gitIcon.svg": "/static/media/gitIcon.0a538082cbbb8437db5ef3ef9801269c.svg",
     "index.html": "/index.html",
-    "main.35e9bfb1.css.map": "/static/css/main.35e9bfb1.css.map",
+    "main.6edb0d75.css.map": "/static/css/main.6edb0d75.css.map",
     "main.38fedd46.js.map": "/static/js/main.38fedd46.js.map"
   },
   "entrypoints": [
-    "static/css/main.35e9bfb1.css",
+    "static/css/main.6edb0d75.css",
     "static/js/main.38fedd46.js"
   ]
 }
