@@ -21,7 +21,7 @@ export default function Card({ image, title, text, link, type, learned }) {
   }, []);
 
   return (
-    <div className={`card ${type}`}>
+    <div className={`card`}>
       <CardHeader image={image} />
       <CardBody
         title={title}

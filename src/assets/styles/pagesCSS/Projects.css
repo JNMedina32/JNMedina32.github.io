@@ -33,6 +33,7 @@
   .sectContent {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .vipText2 {

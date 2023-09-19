@@ -9,7 +9,7 @@
   padding: 30px;
 }
 
-.contactPage::before, 
+.contactPage::before,
 .contactPage::after {
   content: "";
   position: absolute;
@@ -37,22 +37,45 @@
   width: 8px;
 }
 
-
 /* transparent, blue, red, blue, transparent scheme */
 .contactPage::before {
-  background: linear-gradient(to right, transparent 1%, var(--mainText) 33%, var(--accent2) 66%, var(--accent2));
+  background: linear-gradient(
+    to right,
+    transparent 1%,
+    var(--mainText) 33%,
+    var(--accent2) 66%,
+    var(--accent2)
+  );
 }
 
 .contactContainer::before {
-  background: linear-gradient(to top, transparent 1%, var(--mainText) 33%, var(--accent2) 66%, var(--accent2));
+  background: linear-gradient(
+    to top,
+    transparent 1%,
+    var(--mainText) 33%,
+    var(--accent2) 66%,
+    var(--accent2)
+  );
 }
 
 .contactPage::after {
-  background: linear-gradient(to left, transparent 1%, var(--mainText) 33%, var(--accent2) 66%, var(--accent2));
+  background: linear-gradient(
+    to left,
+    transparent 1%,
+    var(--mainText) 33%,
+    var(--accent2) 66%,
+    var(--accent2)
+  );
 }
 
 .contactContainer::after {
-  background: linear-gradient(to bottom, transparent 1%, var(--mainText) 33%, var(--accent2) 66%, var(--accent2));
+  background: linear-gradient(
+    to bottom,
+    transparent 1%,
+    var(--mainText) 33%,
+    var(--accent2) 66%,
+    var(--accent2)
+  );
 }
 
 .contactHeader {
@@ -161,12 +184,21 @@
 
 @media (max-width: 575px) {
   .contactPage {
-    padding: 10px;
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px;
+  }
+
+  .contactInfoDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .info {
-    flex-direction: column;
-    align-items: flex-start;
+    
   }
 
   .contactForm {

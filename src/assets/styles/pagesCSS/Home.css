@@ -96,4 +96,10 @@
     justify-content: center;
     align-items: center;
   }
+  .homeDiv,
+  .homeDiv2 {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }

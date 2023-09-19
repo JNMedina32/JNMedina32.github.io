@@ -8,7 +8,7 @@ import AirborneCert from "../images/timelineImgs/AirborneCert.jpg";
 import SCFCodingAcademy from "../images/timelineImgs/SCFCodingAcademy.jpg";
 import Pern from "../images/timelineImgs/PERN.jpg";
 import JumpmasterCert from "../images/timelineImgs/JumpmasterCert.jpg";
-import MasterBlaster from "../images/timelineImgs/MasterBlasters.jpg";
+
 import PathfinderCert from "../images/timelineImgs/PathfinderCert.jpg";
 import E6Rank from "../images/timelineImgs/E6Rank.jpg";
 import firstDeployment from "../images/timelineImgs/1stDeployment.jpeg";
