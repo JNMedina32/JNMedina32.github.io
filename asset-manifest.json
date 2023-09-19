@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6edb0d75.css",
-    "main.js": "/static/js/main.38fedd46.js",
+    "main.css": "/static/css/main.0000b0fa.css",
+    "main.js": "/static/js/main.77f3e344.js",
     "static/media/CodingCampGraduates3.jpg": "/static/media/CodingCampGraduates3.1fb67e797ff467b8fe7d.jpg",
     "static/media/Qatar.jpg": "/static/media/Qatar.242ec6006b45baef0f47.jpg",
     "static/media/MFFCert.jpg": "/static/media/MFFCert.93d2d7aa92b2d807cc19.jpg",
@@ -29,12 +29,13 @@
     "static/media/ArmySalute.jpg": "/static/media/ArmySalute.d78de65494cd13a9c880.jpg",
     "static/media/RegexBlog.png": "/static/media/RegexBlog.da42b369c22c8d882c63.png",
     "static/media/RecipeApp.png": "/static/media/RecipeApp.9d12c010d58b052c8772.png",
+    "static/media/E6Rank.jpg": "/static/media/E6Rank.73a6568d1d89874ca84e.jpg",
+    "static/media/MFFBadge.jpg": "/static/media/MFFBadge.118955c2ca0061d1997b.jpg",
     "static/media/MiddlewareBlog.webp": "/static/media/MiddlewareBlog.e4084694fb775ac5f4ac.webp",
     "static/media/css.png": "/static/media/css.7ade9265dc9bd2c6bc82.png",
     "static/media/Passport.jsBlog.webp": "/static/media/Passport.jsBlog.f0e2151ab00d6e0c994b.webp",
     "static/media/html5.png": "/static/media/html5.e7a936432435be030e1c.png",
     "static/media/JavaScript.png": "/static/media/JavaScript.b53de0f8c513f9e8b378.png",
-    "static/media/MasterBlasters.jpg": "/static/media/MasterBlasters.d19618ed0e992a8fe54b.jpg",
     "static/media/postgresql.svg": "/static/media/postgresql.4ba446920bb022bd86bd742574637538.svg",
     "static/media/touchSVG.svg": "/static/media/touchSVG.264c736d6b133ddf7474d2e6eed6725d.svg",
     "static/media/github.svg": "/static/media/github.6d4f8d6e9335a6ad1b70714b46fcc88d.svg",
@@ -43,11 +44,11 @@
     "static/media/expressjsIcon.svg": "/static/media/expressjsIcon.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
     "static/media/gitIcon.svg": "/static/media/gitIcon.0a538082cbbb8437db5ef3ef9801269c.svg",
     "index.html": "/index.html",
-    "main.6edb0d75.css.map": "/static/css/main.6edb0d75.css.map",
-    "main.38fedd46.js.map": "/static/js/main.38fedd46.js.map"
+    "main.0000b0fa.css.map": "/static/css/main.0000b0fa.css.map",
+    "main.77f3e344.js.map": "/static/js/main.77f3e344.js.map"
   },
   "entrypoints": [
-    "static/css/main.6edb0d75.css",
-    "static/js/main.38fedd46.js"
+    "static/css/main.0000b0fa.css",
+    "static/js/main.77f3e344.js"
   ]
 }
