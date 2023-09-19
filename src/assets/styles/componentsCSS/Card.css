@@ -151,15 +151,15 @@ h6 {
   .card {
     width: 90%;
     height: auto;
-    margin: 10px auto;
+    margin: 10px 0;
   }
   
-  .cardContent, .blog .cardContent {
+  .cardContent, .cardContent {
     height: auto;
     padding: 10px;
   }
 
-  .cardTitle, .blog .cardTitle {
+  .cardTitle, .cardTitle {
     font-size: 1.2em;
     margin-bottom: 10px;
   }

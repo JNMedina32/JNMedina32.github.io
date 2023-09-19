@@ -57,12 +57,13 @@
   position: absolute;
   height: 20%;
   width: 100%;
-  background-color: green;
+  background-color: #5A3D27;
   bottom: 0;
 }
 
 .tree {
   position: relative;
+  color: forestgreen;
   font-size: 35px;
   z-index: 10;
 }

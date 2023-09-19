@@ -29,13 +29,6 @@
 }
 
 @media (max-width: 575px) {
-  .projectsBlogsPage {
-    padding: 10px;
-  }
-
-  .pageContent {
-    padding: 0 10px;
-  }
 
   .sectContent {
     flex-direction: column;

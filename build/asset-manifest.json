@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a020518a.css",
-    "main.js": "/static/js/main.8711543a.js",
+    "main.css": "/static/css/main.35e9bfb1.css",
+    "main.js": "/static/js/main.38fedd46.js",
     "static/media/CodingCampGraduates3.jpg": "/static/media/CodingCampGraduates3.1fb67e797ff467b8fe7d.jpg",
     "static/media/Qatar.jpg": "/static/media/Qatar.242ec6006b45baef0f47.jpg",
     "static/media/MFFCert.jpg": "/static/media/MFFCert.93d2d7aa92b2d807cc19.jpg",
@@ -43,11 +43,11 @@
     "static/media/expressjsIcon.svg": "/static/media/expressjsIcon.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
     "static/media/gitIcon.svg": "/static/media/gitIcon.0a538082cbbb8437db5ef3ef9801269c.svg",
     "index.html": "/index.html",
-    "main.a020518a.css.map": "/static/css/main.a020518a.css.map",
-    "main.8711543a.js.map": "/static/js/main.8711543a.js.map"
+    "main.35e9bfb1.css.map": "/static/css/main.35e9bfb1.css.map",
+    "main.38fedd46.js.map": "/static/js/main.38fedd46.js.map"
   },
   "entrypoints": [
-    "static/css/main.a020518a.css",
-    "static/js/main.8711543a.js"
+    "static/css/main.35e9bfb1.css",
+    "static/js/main.38fedd46.js"
   ]
 }
