@@ -1,6 +1,7 @@
 import "../assets/styles/pagesCSS/Contact.css";
 import ContactForm from "../components/ContactForm";
 import LinkedInIcon from "../assets/images/contactIms/LinkedInIcon.png";
+import gitHub from "../assets/icons/skillsicons/github.svg";
 
 export default function Contact() {
   return (
@@ -31,8 +32,20 @@ export default function Contact() {
               <img
                 src={LinkedInIcon}
                 alt="LinkedIn Icon"
-                className="linkedInImage"
+                className="linkedImage"
               />
+            </a>
+          </div>
+        </div>
+        <div className="info">
+          <h3>GitHub:</h3>
+          <div className="linkedInIcon">
+            <a
+              href="https://github.com/JNMedina32"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={gitHub} alt="GitHub Icon" className="linkedImage" />
             </a>
           </div>
         </div>

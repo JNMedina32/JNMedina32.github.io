@@ -56,4 +56,7 @@
     width: 80vw;
     text-align: center;
   }
+  .locations {
+    text-align: start;
+  }
 }

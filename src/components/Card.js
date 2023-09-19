@@ -46,7 +46,7 @@ function CardBody({ title, text, learned, showContent, toggleContent, type }) {
       <div className="cardTitle">{title}</div>
       {type === "blog" ? (
         <div className="cardBody"> 
-          <p className="cardText">{text}</p>
+          <p className="cardText blog">{text}</p>
         </div>
       ) : (
         <div className="cardBody" onClick={toggleContent}>

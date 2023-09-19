@@ -1,12 +1,11 @@
-import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route  } from "react-router-dom";
 import { ThemeProvider, ThemeContext } from "./assets/styles/ThemeContext";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import { useState, useEffect, useContext } from "react";
+
 
 export default function App() {
   return (

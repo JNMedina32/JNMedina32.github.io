@@ -24,10 +24,3 @@
   color: black;
   font-size: .5em;
 }
-
-.redLine {
-  background-color: red;
-  position: absolute;
-  z-index: 10;
-  height: 10px;
-}

@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlane, faCloud, faTree } from "@fortawesome/free-solid-svg-icons";
 import { altStyles } from "../../assets/helpers/skydivingHelpers";
 import ArmyParatrooper from "../../assets/images/interestsImgs/ArmyParatrooper.jpg";
-import { motion, useAnimate, useInView } from "framer-motion";
+import { useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
 import "../../assets/styles/componentsCSS/Skydiving.css";
 
@@ -14,8 +14,8 @@ export default function Skydiving() {
 
 
   const sequence = [
-    ["div", { x: [-500, 800] }, { duration: 5, ease: "linear" }],
-    ["img", { y: [30, 215] }, { at: 2, duration: 4, ease: "linear", }],
+    [".planeAnimationDiv", { x: [-500, 800] }, { duration: 5, ease: "linear" }],
+    [".paratrooper", { y: ["100%", "1000%"], x: [-200, -200] }, { at: 2, duration: 4, ease: "linear", }],
   ];
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function Skydiving() {
 
   return (
     <div className="skydivingAnimation">
-      <motion.div className="sky" ref={scope}>
+      <div className="sky" ref={scope}>
         {[...Array(numberOfClouds)].map((_, index) => (
           <FontAwesomeIcon
             icon={faCloud}
@@ -36,15 +36,15 @@ export default function Skydiving() {
             style={altStyles("clouds", index)}
           />
         ))}
-        <motion.div className="planeAnimationDiv">
+        <div className="planeAnimationDiv">
           <FontAwesomeIcon icon={faPlane} size="2xl" className="plane" />
-        </motion.div>
+        </div>
         <img
           src={ArmyParatrooper}
           alt="Army Paratrooper"
           className="paratrooper"
         />
-      </motion.div>
+      </div>
       <div className="ground">
         {[...Array(numberOfTrees)].map((_, index) => (
           <FontAwesomeIcon
