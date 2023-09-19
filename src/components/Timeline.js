@@ -15,7 +15,7 @@ export default function Timeline() {
   const [totalProgress, setTotalProgress] = useState(0);
   const [showEventList, setShowEventList] = useState(false);
   const totalEvents = timelineEvents.length - 1;
-  const eventDuration = 5000;
+  const eventDuration = 7000;
   const stepSize = 100 / ((eventDuration / 1000) * totalEvents);
   const currentEventIndex = Math.floor(totalProgress / (100 / totalEvents));
   const eventProgress = Math.min(

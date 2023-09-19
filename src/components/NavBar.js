@@ -29,25 +29,25 @@ export default function NavBar() {
         </div>
         <div className={`collapse-menu ${isCollapsed ? "" : "show"}`}>
           <Link to="/">
-            <div className="icon-wrapper">
+            <div className="icon-wrapper" onClick={toggleMenu}>
               <HomeIcon />
               <span className="tooltip-text">Home</span>
             </div>
           </Link>
           <Link to="/about">
-            <div className="icon-wrapper">
+            <div className="icon-wrapper" onClick={toggleMenu}>
               <AboutIcon />
               <span className="tooltip-text">About Me</span>
             </div>
           </Link>
           <Link to="/projects">
-            <div className="icon-wrapper">
+            <div className="icon-wrapper" onClick={toggleMenu}>
               <ProjectsIcon />
               <span className="tooltip-text">Projects I have worked on</span>
             </div>
           </Link>
           <Link to="/contact">
-            <div className="icon-wrapper">
+            <div className="icon-wrapper" onClick={toggleMenu}>
               <ContactIcon />
               <span className="tooltip-text">Contact Me</span>
             </div>

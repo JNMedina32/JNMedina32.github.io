@@ -5,6 +5,7 @@ import Traveling from "./interestsSections/Traveling";
 import Coding from "./interestsSections/Coding";
 import Chessboard from "./interestsSections/Chessboard";
 import { useState } from "react";
+import touchSVG from "../assets/icons/touchSVG.svg";
 
 export default function Interests() {
   const [showContent, setShowContent] = useState({});
@@ -36,7 +37,11 @@ export default function Interests() {
         <h1>
           <span>Interests</span>
         </h1>
-      </div>
+        <div className="touchDiv">
+          <img src={touchSVG} alt="touch" className="touchSvg" />
+          <p>Click each to learn more</p>
+        </div>
+      </div>  
       <div className="interestsDiv">
         <div className="chess" onClick={() => toggleContent("chess")}>
           {showContent.chess ? (

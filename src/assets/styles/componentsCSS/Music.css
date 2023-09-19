@@ -17,7 +17,9 @@
   display: flex;
   position: relative;
 }
-
+.skillCat {
+  color: var(--mainText);
+}
 
 .trebleClef {
   height: 100%;

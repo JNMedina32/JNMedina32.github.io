@@ -23,7 +23,7 @@ import Arcom from "../images/timelineImgs/ARCOM.jpg";
 import FCCCert1 from "../images/timelineImgs/FCCCert1.jpg";
 import FCCCert2 from "../images/timelineImgs/FCCCert2.jpg";
 import Tampa from "../images/timelineImgs/Tampa.png";
-import CodingCampGraduates from "../images/timelineImgs/CodingCampGraduates.jpg";
+import CodingCampGraduates from "../images/timelineImgs/CodingCampGraduates3.jpg";
 import SCFCodingCert from "../images/timelineImgs/SCFCodingCert.jpeg";
 
 export const timelineEvents = [

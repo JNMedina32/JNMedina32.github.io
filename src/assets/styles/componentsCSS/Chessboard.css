@@ -51,6 +51,11 @@
     font-size: 5rem; /* Adjust the font size for smaller screens */
   }
 }
+@media (max-width: 425px) {
+  .whitePiece, .blackPiece {
+    font-size: 3.7rem; /* Adjust the font size for smaller screens */
+  }
+}
 @media (max-width: 415px) {
   .whitePiece, .blackPiece {
     font-size: 3.8rem; /* Adjust the font size for smaller screens */

@@ -29,6 +29,7 @@ export default function Card({ image, title, text, link, type, learned }) {
         learned={learned}
         showContent={showContent}
         toggleContent={toggleContent}
+        type={type}
       />
       <CardFooter link={link} currentIconIndex={currentIconIndex} />
     </div>
@@ -39,21 +40,27 @@ function CardHeader({ image }) {
   return <div className="cardImgDiv">{image}</div>;
 }
 
-function CardBody({ title, text, learned, showContent, toggleContent }) {
+function CardBody({ title, text, learned, showContent, toggleContent, type }) {
   return (
     <div className="cardContent">
       <div className="cardTitle">{title}</div>
-      <div className="cardBody" onClick={toggleContent}>
-        <p className="cardText">{showContent ? text : "Description"}</p>
-        <div className="learned">
-          <h6>What I Learned:</h6>
-          <ul>
-            {learned.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
+      {type === "blog" ? (
+        <div className="cardBody"> 
+          <p className="cardText">{text}</p>
         </div>
-      </div>
+      ) : (
+        <div className="cardBody" onClick={toggleContent}>
+          <p className="cardText">{showContent ? text : "Description"}</p>
+          <div className="learned">
+            <h6>Things I Learned While Developing:</h6>
+            <ul>
+              {learned.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

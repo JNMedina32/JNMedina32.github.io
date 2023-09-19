@@ -18,7 +18,7 @@ export default function Skills() {
       <div className="skillsListSection">
         <div className="tier">
           <div className="skillList">
-            <h3 className="vipText2">Aquired from Life Lessons</h3>
+            <h3 className="skillCat">Aquired from Life Lessons</h3>
             <div className="skillsColumn">
               <ul>
                 {lifeSkills.map((skill) => (
@@ -48,7 +48,7 @@ export default function Skills() {
             </div>
           </div>
           <div className="skillList">
-            <h3 className="vipText2">Coding Skills</h3>
+            <h3 className="skillCat">Coding Skills</h3>
             <div className="skillColumn">
               <div className="tier">
                 <div className="skillList">

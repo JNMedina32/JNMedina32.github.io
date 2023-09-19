@@ -13,9 +13,7 @@
   color: var(--BG);
 }
 
-.card:hover {
-  transform: scale(1.05);
-}
+
 
 .cardImgDiv {
   display: flex;

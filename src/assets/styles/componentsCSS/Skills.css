@@ -44,8 +44,12 @@
   position: relative;
   display: flex;
   align-items: center;
-  
 }
+
+.skill:hover {
+  color: var(--accent2);
+}
+
 .skillIcon,
 .myIcon {
   width: 24px;
