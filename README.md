@@ -34,28 +34,11 @@ My personal portfolio hosts a range of features to provide a comprehensive overv
 
 3. **Dark Mode**: A toggle feature that allows users to switch between dark and light themes, enhancing viewing comfort.
 
-4. **Performance Optimizations**: The portfolio leverages lazy loading and image optimization techniques to ensure quick load times and a smooth user experience.
 
 I invite you to explore the portfolio to experience these features firsthand.
 
 
-## Setup
-
-Instructions on how to set up the project locally:
-
-1. Clone the repository: `git clone https://github.com/yourusername/portfolio.git`
-2. Navigate to the project directory: `cd portfolio`
-3. Install dependencies: `npm install`
-4. Start the development server: `npm start`
-
-## Deployment
-
-Information about where and how the portfolio is deployed.
-
 ## Contact
 
-Your contact information and links to other platforms (LinkedIn, personal website, etc.)
-
-## License
-
-If applicable, include information about the license.
+- Email: JNMedina.Dev@gmail.com 
+- LinkedIn: www.linkedin.com/in/JNMedinaDev
