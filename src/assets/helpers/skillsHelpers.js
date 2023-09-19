@@ -1,17 +1,18 @@
-import htmlIcon from "../../assets/images/skillsImgs/html5.png";
-import cssIcon from "../../assets/images/skillsImgs/css.png";
-import jsIcon from "../../assets/images/skillsImgs/JavaScript.png";
-import reactIcon from "../../assets/images/skillsImgs/react.png";
-import fmIcon from "../../assets/images/skillsImgs/framerMotion.png";
-import bootstrapSVG from "../../assets/icons/skillsicons/bootstrap.svg";
-import nodeSVG from "../../assets/icons/skillsicons/nodejs.svg";
-import expressSVG from "../../assets/icons/skillsicons/expressjsIcon.svg";
-import postgresSVG from "../../assets/icons/skillsicons/postgresql.svg";
-import sqlImg from "../../assets/images/skillsImgs/sqlImg.png";
-import passportjsImg from "../../assets/images/skillsImgs/passportjsImg.png";
-import oAuth2Img from "../../assets/images/skillsImgs/oAuth2.jpg";
-import gitIcon from "../../assets/icons/skillsicons/gitIcon.svg";
-import githubIcon from "../../assets/icons/skillsicons/github.svg";
+import htmlIcon from "../images/skillsImgs/html5.png";
+import cssIcon from "../images/skillsImgs/css.png";
+import jsIcon from "../images/skillsImgs/JavaScript.png";
+import reactIcon from "../images/skillsImgs/react.png";
+import fmIcon from "../images/skillsImgs/framerMotion.png";
+import bootstrapSVG from "../icons/skillsicons/bootstrap.svg";
+import nodeSVG from "../icons/skillsicons/nodejs.svg";
+import expressSVG from "../icons/skillsicons/expressjsIcon.svg";
+import postgresSVG from "../icons/skillsicons/postgresql.svg";
+import sqlImg from "../images/skillsImgs/sqlImg.png";
+import passportjsImg from "../images/skillsImgs/passportjsImg.png";
+import oAuth2Img from "../images/skillsImgs/oAuth2.jpg";
+import gitIcon from "../icons/skillsicons/gitIcon.svg";
+import githubIcon from "../icons/skillsicons/github.svg";
+
 
 export const lifeSkills = [
   {

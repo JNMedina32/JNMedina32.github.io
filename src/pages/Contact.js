@@ -1,5 +1,4 @@
 import "../assets/styles/pagesCSS/Contact.css";
-import ContactForm from "../components/ContactForm";
 import LinkedInIcon from "../assets/images/contactIms/LinkedInIcon.png";
 import gitHub from "../assets/icons/skillsicons/github.svg";
 
@@ -48,16 +47,6 @@ export default function Contact() {
               <img src={gitHub} alt="GitHub Icon" className="linkedImage" />
             </a>
           </div>
-        </div>
-      </div>
-      <div className="contactFormContainer">
-        <h3>
-          Or
-          <br />
-          Send a Message Here
-        </h3>
-        <div className="contactFormDiv">
-          <ContactForm />
         </div>
       </div>
     </div>

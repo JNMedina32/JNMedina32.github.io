@@ -1,6 +1,6 @@
 import NavBar from "./components/NavBar";
 import { BrowserRouter, Routes, Route  } from "react-router-dom";
-import { ThemeProvider, ThemeContext } from "./assets/styles/ThemeContext";
+import { ThemeProvider } from "./assets/styles/ThemeContext";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";

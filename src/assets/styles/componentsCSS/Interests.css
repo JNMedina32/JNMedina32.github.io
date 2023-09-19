@@ -3,7 +3,6 @@
   flex-direction: column;
 }
 
-
 .touchSvg {
   width: 50px;
 }
@@ -47,8 +46,8 @@
 
   .interestsDiv > div {
     height: 80vw;
-    width: 80vw; 
-    margin: 20px; 
+    width: 80vw;
+    margin: 20px;
   }
 
   .interest {

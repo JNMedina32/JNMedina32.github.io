@@ -1,4 +1,5 @@
 import "../assets/styles/componentsCSS/Skills.css";
+import SkillColumn from "./SkillColumn";
 import {
   lifeSkills,
   frontEndSkills,
@@ -22,27 +23,7 @@ export default function Skills() {
             <div className="skillsColumn">
               <ul>
                 {lifeSkills.map((skill) => (
-                  <li key={skill} className="skill">
-                    {skill.icon ? (
-                      <div className="skillIconDiv">
-                        <img
-                          className="skillIcon"
-                          src={skill.icon}
-                          alt={skill.name}
-                        />
-                      </div>
-                    ) : (
-                      <div className="myIcon">
-                        &lt;
-                        <span className="initials">
-                          <span className="letter">J</span>
-                          <span className="letter">M</span>
-                        </span>
-                        &gt;
-                      </div>
-                    )}
-                    {skill.name}
-                  </li>
+                  <SkillColumn key={skill} skill={skill} />
                 ))}
               </ul>
             </div>
@@ -58,27 +39,7 @@ export default function Skills() {
                     </h5>
                     <ul>
                       {frontEndSkills.map((skill) => (
-                        <li key={skill.name} className="skill">
-                          {skill.icon ? (
-                            <div className="skillIconDiv" id={skill.name}>
-                              <img
-                                className="skillIcon"
-                                src={skill.icon}
-                                alt={skill.name}
-                              />
-                            </div>
-                          ) : (
-                            <div className="myIcon">
-                              &lt;
-                              <span className="initials">
-                                <span className="letter">J</span>
-                                <span className="letter">M</span>
-                              </span>
-                              &gt;
-                            </div>
-                          )}
-                          {skill.name}
-                        </li>
+                        <SkillColumn key={skill.name} skill={skill} />
                       ))}
                     </ul>
                   </div>
@@ -90,27 +51,7 @@ export default function Skills() {
                     </h5>
                     <ul>
                       {backEndSkills.map((skill) => (
-                        <li key={skill.name} className="skill">
-                          {skill.icon ? (
-                            <div className="skillIconDiv">
-                              <img
-                                className="skillIcon"
-                                src={skill.icon}
-                                alt={skill.name}
-                              />
-                            </div>
-                          ) : (
-                            <div className="myIcon">
-                              &lt;
-                              <span className="initials">
-                                <span className="letter">J</span>
-                                <span className="letter">M</span>
-                              </span>
-                              &gt;
-                            </div>
-                          )}
-                          {skill.name}
-                        </li>
+                        <SkillColumn key={skill.name} skill={skill} />
                       ))}
                     </ul>
                   </div>
@@ -124,27 +65,7 @@ export default function Skills() {
                     </h5>
                     <ul>
                       {developmentSkills.map((skill) => (
-                        <li key={skill} className="skill">
-                          {skill.icon ? (
-                            <div className="skillIconDiv">
-                              <img
-                                className="skillIcon"
-                                src={skill.icon}
-                                alt={skill.name}
-                              />
-                            </div>
-                          ) : (
-                            <div className="myIcon">
-                              &lt;
-                              <span className="initials">
-                                <span className="letter">J</span>
-                                <span className="letter">M</span>
-                              </span>
-                              &gt;
-                            </div>
-                          )}
-                          {skill.name}
-                        </li>
+                        <SkillColumn key={skill.name} skill={skill} />
                       ))}
                     </ul>
                   </div>
@@ -156,27 +77,7 @@ export default function Skills() {
                     </h5>
                     <ul>
                       {methodologySkills.map((skill) => (
-                        <li key={skill} className="skill">
-                          {skill.icon ? (
-                            <div className="skillIconDiv">
-                              <img
-                                className="skillIcon"
-                                src={skill.icon}
-                                alt={skill.name}
-                              />
-                            </div>
-                          ) : (
-                            <div className="myIcon">
-                              &lt;
-                              <span className="initials">
-                                <span className="letter">J</span>
-                                <span className="letter">M</span>
-                              </span>
-                              &gt;
-                            </div>
-                          )}
-                          {skill.name}
-                        </li>
+                        <SkillColumn key={skill.name} skill={skill} />
                       ))}
                     </ul>
                   </div>
