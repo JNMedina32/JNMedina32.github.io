@@ -1,0 +1,62 @@
+Jul 2008 - Parachute Animation
+
+Icon: FontAwesome fa-parachute-box
+Animation: Use a "drop in" animation where the parachute icon descends gently, possibly swinging slightly side to side as it comes down to signify a parachute descent.
+Oct 2008 - Nov 2008 - Badge Animation
+
+Icon: FontAwesome fa-award
+Animation: The icon can appear from a scale of 0 to its original size to signify the achievement of graduating.
+Feb 2009 - Map Marker Animation
+
+Icon: FontAwesome fa-map-marker-alt
+Animation: The icon can bounce in to indicate the first duty station.
+Jul 2011 - Transition Animation
+
+Icon: FontAwesome fa-exchange-alt
+Animation: A smooth transition animation where the icon moves from one side to another to signify the transition from active duty to reserves.
+Feb 2013 - Jumpmaster Badge Animation
+
+Icon: FontAwesome fa-certificate
+Animation: A quick "pop" animation where the badge appears suddenly to signify graduation.
+Nov 2014 - Promotion Rank Animation
+
+Icon: FontAwesome fa-chevron-up
+Animation: An animation where the chevron icon moves upwards to signify promotion.
+Sep 2015 - Airplane Departure Animation
+
+Icon: FontAwesome fa-plane-departure
+Animation: The plane icon can take off from the bottom of the view and ascend upwards, possibly with a slight rotation to indicate the deployment.
+Nov 2016 - Free Fall Animation
+
+Icon: FontAwesome fa-user-alt
+Animation: A "free fall" animation where the icon descends quickly from the top of the view, possibly with a spinning effect.
+Feb 2017 - Repeat Animation
+
+Icon: FontAwesome fa-redo-alt
+Animation: A spinning animation to indicate a repeat deployment.
+May 2018 - Farewell Animation
+
+Icon: FontAwesome fa-suitcase
+Animation: A suitcase icon that appears and then moves away, fading into the distance to signify leaving home.
+Aug 2021 - Code Animation
+
+Icon: FontAwesome fa-code
+Animation: The icon can appear with a typing effect, simulating code being written to represent the start of coding exploration.
+Feb 2023 - Homecoming Animation
+
+Icon: FontAwesome fa-home
+Animation: The icon can drop in gently from the top, signifying a return home to pursue a new career.
+Mar 2023 - Book Animation
+
+Icon: FontAwesome fa-book-open
+Animation: The book icon can open with a smooth animation to signify enrollment in a bootcamp.
+Sep 2023 - Full Stack Engineer Celebration Animation
+
+Text: Your given description with "FULL-STACK SOFTWARE ENGINEER!"
+Animation: Text can have a color change animation or a slight bounce to emphasize the achievement, with a background of confetti explosion using FontAwesome fa-grin-stars icons to signify celebration.
+
+
+
+https://www.dvidshub.net/image/790718/army-reserve-parachute-riggers-ready-operation-toy-drop
+
+https://www.part-time-commander.com/army-jump-master/

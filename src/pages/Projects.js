@@ -14,9 +14,9 @@ export default function Projects() {
       <p>
         <span className="vipText2">Note:</span>
         <br />
-        Currently looking for a platform to host my full-stack applications:{" "}
+        Currently looking for a platform to host my full-stack application:{" "}
         <span className="vipText2">
-          <u>rootS</u>TEM & E-CommerceStore
+          <u>rootS</u>TEM
         </span>
       </p>
       <div className="pageContent">

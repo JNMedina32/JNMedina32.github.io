@@ -1,5 +1,5 @@
 import ConditionalRenderingBlog from "../images/projectsImgs/ConditionalRenderingBlog.jpg";
-import Ecommerce from "../images/projectsImgs/EcommerceStore.jpg";
+import Ecommerce from "../images/projectsImgs/EcommerceStore.png";
 import MiddlewareBlog from "../images/projectsImgs/MiddlewareBlog.webp";
 import PassportJS from "../images/projectsImgs/Passport.jsBlog.webp";
 import RecipeApp from "../images/projectsImgs/RecipeApp.png";
@@ -22,8 +22,8 @@ export const projectsBlogs = [
   {
     image: <img src={Ecommerce} alt="Ecommerce" className="projImg" />,
     title: "E-Commerce Store",
-    text: "This is an e-commerce store that I built. It is a full-stack application that allows users to browse products, add products to their cart, and checkout.",
-    link: "",
+    text: "This is an e-commerce store that I built. Originally a full-stack application, I updated it to use only Front-end Technology. This application allows users to browse products, add products to their cart, and checkout.",
+    link: "https://jnmedina32.github.io/E-Commerce-Store",
     type: "project",
     learned: ["Improved upon previous skills", "PostgreSQL", "pgAdmin4", "React", "Express.js", "Bootstrap", "SQL Queries" ],
   },
