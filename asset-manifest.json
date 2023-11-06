@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0000b0fa.css",
-    "main.js": "/static/js/main.8eb3af54.js",
+    "main.js": "/static/js/main.af49cc06.js",
     "static/media/CodingCampGraduates3.jpg": "/static/media/CodingCampGraduates3.1fb67e797ff467b8fe7d.jpg",
     "static/media/Qatar.jpg": "/static/media/Qatar.242ec6006b45baef0f47.jpg",
     "static/media/MFFCert.jpg": "/static/media/MFFCert.93d2d7aa92b2d807cc19.jpg",
@@ -17,10 +17,10 @@
     "static/media/FCCCert1.jpg": "/static/media/FCCCert1.70286af495fa9563dc38.jpg",
     "static/media/QatarTraining.jpg": "/static/media/QatarTraining.af6a797ddfdcfb28951b.jpg",
     "static/media/SCFCodingCert.jpeg": "/static/media/SCFCodingCert.a500f9d510f612dc918c.jpeg",
+    "static/media/ProfilePic.jpg": "/static/media/ProfilePic.de7833d1e551f4363c74.jpg",
     "static/media/MyAppSTEM.jpg": "/static/media/MyAppSTEM.d3169356e9c33101cfab.jpg",
     "static/media/MePacking824.jpg": "/static/media/MePacking824.128307e525c4bf640936.jpg",
     "static/media/PERN.jpg": "/static/media/PERN.0b0aa45252fd602e6190.jpg",
-    "static/media/ProfilePic.jpg": "/static/media/ProfilePic.e8734f389590682e1d53.jpg",
     "static/media/Tampa.png": "/static/media/Tampa.5c0beda028a7c8a684c2.png",
     "static/media/worldMap.jpg": "/static/media/worldMap.d5d270ae57c9dd1018c7.jpg",
     "static/media/myLogo.png": "/static/media/myLogo.282309947e3874e07042.png",
@@ -45,10 +45,10 @@
     "static/media/gitIcon.svg": "/static/media/gitIcon.0a538082cbbb8437db5ef3ef9801269c.svg",
     "index.html": "/index.html",
     "main.0000b0fa.css.map": "/static/css/main.0000b0fa.css.map",
-    "main.8eb3af54.js.map": "/static/js/main.8eb3af54.js.map"
+    "main.af49cc06.js.map": "/static/js/main.af49cc06.js.map"
   },
   "entrypoints": [
     "static/css/main.0000b0fa.css",
-    "static/js/main.8eb3af54.js"
+    "static/js/main.af49cc06.js"
   ]
 }
